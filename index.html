@@ -4,120 +4,61 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Spencer Luke</title>
-   <!-- Include Tailwind CSS for utility classes like padding and rounded corners -->
    <script src="https://cdn.tailwindcss.com"></script>
-   <!-- Include Google Font for serif title -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
    <style>
-       /*
-        * CSS Style Guide
-        * ----------------------------------------------------
-        * Defines the core look and feel of the page.
-        */
-
-
-       /* Set the body's background color and text color */
+       
        body {
            font-family: 'Inter', sans-serif;
-           background-color: #131514c4; /* Very dark background with slight transparency */
-           color: #ffffff; /* White text for contrast */
+           background-color: #131514c4; 
+           color: #ffffff; 
            margin: 0;
            padding: 0;
        }
       
-       /* Apply the serif font to the main title */
        h1 {
            font-family: 'Playfair Display', serif;
        }
 
-
-       /*
-        * Main content container
-        * ----------------------------------------------------
-        * This class centers the content on the page and sets a max width.
-        * The margin: 0 auto; property is a key to centering the block-level element.
-        */
        .container {
-           /* Set the maximum width to 1000px as requested */
+          
            max-width: 1000px;
            margin: 0 auto;
-           padding: 2rem 1rem; /* Add padding for mobile devices */
+           padding: 2rem 1rem; 
        }
 
-
-       /*
-        * Image Gallery using Flexbox
-        * ----------------------------------------------------
-        * This class sets up a flexible container for images.
-        * display: flex; enables the flexbox layout.
-        * flex-wrap: wrap; allows items to wrap to the next line on smaller screens.
-        * gap: 2rem; creates more space between the images.
-        * justify-content: center; centers the images within the container.
-        */
        .image-gallery {
            display: flex;
            flex-wrap: wrap;
-           gap: 2rem; /* Increased spacing between images */
-           justify-content: center; /* Center the images in the container */
+           gap: 2rem; 
+           justify-content: center; 
            margin-top: 2rem;
        }
 
-
-       /* * Image Sizing
-        * ----------------------------------------------------
-        * This ensures images are responsive.
-        * On mobile (small screens), images will take up the full width.
-        * On larger screens, the media query will override this to force a two-column layout.
-        */
        .image-gallery img {
-           width: 100%; /* Default to full width on small screens */
+           width: 100%; 
            height: auto;
            object-fit: cover;
-           border-radius: 0.5rem; /* Match the rounded-lg class from Tailwind */
-           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* Match the shadow-md class */
+           border-radius: 0.5rem; 
+           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); 
           
-           /*
-            * Add a smooth transition for the hover effect
-            * This makes the scaling and shadow changes appear fluid.
-            */
            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
        }
 
-
-       /*
-        * Image Hover Effect
-        * ----------------------------------------------------
-        * This rule applies when the mouse hovers over an image.
-        * transform: scale(1.05); makes the image 5% larger.
-        * box-shadow is increased to give a more pronounced "lift" effect.
-        */
        .image-gallery img:hover {
            transform: scale(1.03);
            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
        }
 
-
-       /*
-        * Image Card container
-        * This class wraps each image and its text content.
-        * It allows for flexible and responsive sizing within the gallery.
-        */
        .image-card {
-           width: 100%; /* Default to full width on small screens */
+           width: 100%;
        }
 
-
-       /* Responsive styles for larger screens (640px and up) */
        @media (min-width: 640px) {
            .image-card {
-               /*
-                * Force two images per row.
-                * The calc() function accounts for the new, larger gap between images.
-                */
                width: calc(50% - 1rem);
            }
        }
-
 
        body {
            margin: 0;
@@ -143,9 +84,6 @@
        }
    </style>
 
-
-
-
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
  .font-merriweather {
@@ -164,41 +102,31 @@
 </head>
 <body class="flex flex-col min-h-screen">
 
-
-   <!-- Navigation bar at the top with a dark gray background, now with content on both ends -->
    <nav class="bg-[#131514c4] p-4 flex justify-between items-center shadow-lg">
-       <div class="container flex justify-between items-center px-4">
-           <!-- Increased text size from text-xl to text-2xl -->
-           <span class="text-white text-2xl font-semibold">spencer luke</span>
+       <div class="container flex justify-end sm:justify-between items-center px-4">
+           <span class="hidden sm:block text-white text-2xl font-semibold"><a href="index.html" class="hover:text-gray-400">spencer luke</a></span>
            <ul class="flex space-x-6">
-               <!-- Increased text size from text-lg to text-xl -->
-               <li><a href="#" class="text-white hover:text-gray-400 text-xl font-semibold">work</a></li>
-               <li><a href="#" class="text-white hover:text-gray-400 text-xl font-semibold">about</a></li>
+               <li><a href="index.html" class="text-white hover:text-gray-400 text-xl font-semibold">work</a></li>
+               <li><a href="about.html" class="text-white hover:text-gray-400 text-xl font-semibold">about</a></li>
                <li><a href="https://drive.google.com/file/d/1QOIxv4yUMhOUyKNPmPDkbpIku_KGq-np/view?usp=sharing" class="text-white hover:text-gray-400 text-xl font-semibold">resume</a></li>
            </ul>
        </div>
    </nav>
 
 
-   <!-- A margin-top class has been added here to create the gap -->
    <div class="container flex-grow mt-16">
        <!-- Main content of the page -->
-       <!-- Flexbox layout for the main header, splitting title and subtext -->
        <div class="flex flex-col md:flex-row justify-between items-center p-4">
-           <!-- Main Title on the left, now with a larger width of 3/5 on medium screens and up -->
            <h1 class="text-3xl md:text-[48px] font-bold font-serif md:w-3/5">
                <span class="font-merriweather">
                    A UX researcher completing my masters in HCI at Georgia Tech seeking roles in tech and games
                </span>
            </h1>
-           <!-- Subtext on the right, now with a smaller width of 2/5 on medium screens and up -->
            <div class="mt-4 md:mt-0 md:w-2/5 text-gray-300">
-               <!-- The paragraph text size has been changed from text-lg to text-base to make it slightly smaller -->
                <p class="text-white big-inter-text">
                    I'm Spencer Luke, a UX researcher with a background in HCI. I leverage my experience in tech UI/UX, game playtests, and academic research to advocate for the user and create human-centered experiences. 
                </p>
-               <!-- Table for additional information, now using a grid to align the values -->
-               <!-- The labels 'Attending:' and 'Home:' now have the text-gray-300 class -->
+        
                <div class="mt-5 text-white grid grid-cols-[auto,1fr] gap-x-8 big-inter-text">
                    <span class="text-gray-400">Last at:</span>
                    <span>UXR Intern @ Google</span>
@@ -210,47 +138,47 @@
            </div>
        </div>
 
-
-       <!-- The margin-top class has been changed to increase the gap, and a bottom margin has been added -->
        <section class="mt-24 mb-24 p-8 bg-[#131514c4] rounded-lg shadow-lg">
-           <!-- Replaced "Image Gallery" with "Case studies" -->
            <h2 class="text-3xl font-semibold mb-4">Case Studies</h2>
-           <!-- The descriptive paragraph has been removed as requested -->
-
-
            <div class="image-gallery">
-               <!-- Image card for Image 1 -->
-               <div class="image-card">
-                   <img src="assets/images/google-thumbnail.png" alt="Google project thumbnail">
-                   <h3 class="text-xl font-semibold mt-2">Gemini and Agentic Tools</h3>
-                   <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Google</p>
-               </div>
+
+               <a href="google.html" class="image-card block">
+                    <div class="">
+                        <img src="assets/images/google-thumbnail.png" alt="Google project thumbnail">
+                        <h3 class="text-xl font-semibold mt-2">Gemini and Agentic Tools</h3>
+                        <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Google</p>
+                    </div>
+                </a>
+
+                <a href="marta.html" class="image-card block">
+                    <div class="">
+                        <img src="assets/images/marta-thumbnail.png" alt="MARTA project thumbnail">
+                        <h3 class="text-xl font-semibold mt-2">World Cup Transit Experience</h3>
+                        <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">MARTA</p>
+                    </div>
+                </a>
+
+                <a href="#" class="image-card block">
+                    <div class="">
+                        <img src="assets/images/gaming-thumbnail.png" alt="AI Accessibility in Gaming thumbnail">
+                        <h3 class="text-xl font-semibold mt-2">AI-Powered Accessibility in Gaming</h3>
+                        <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Georgia Tech</p>
+                    </div>
+                </a>
               
-               <!-- Image card for Image 2 -->
-               <div class="image-card">
-                   <img src="assets/images/marta-thumbnail.png" alt="MARTA project thumbnail">
-                   <h3 class="text-xl font-semibold mt-2">World Cup Transit Experience</h3>
-                   <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">MARTA</p>
-               </div>
-              
-               <!-- Image card for Image 3 -->
-               <div class="image-card">
-                   <img src="assets/images/gaming-thumbnail.png" alt="AI Accessibility in Gaming thumbnail">
-                   <h3 class="text-xl font-semibold mt-2">AI-Powered Accessibility in Gaming</h3>
-                   <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Georgia Tech</p>
-               </div>
-              
-               <!-- Image card for Image 4 -->
-               <div class="image-card">
-                   <img src="assets/images/wellplayed-thumbnail.png" alt="Well Played thumbnail">
-                   <h3 class="text-xl font-semibold mt-2">Think Aloud Playtest</h3>
-                   <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Well Played Research</p>
-               </div>
+                <a href="wellplayed.html" class="image-card block">
+                    <div class="">
+                        <img src="assets/images/wellplayed-thumbnail.png" alt="Well Played thumbnail">
+                        <h3 class="text-xl font-semibold mt-2">Think Aloud Playtest</h3>
+                        <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Well Played Research</p>
+                    </div>
+                </a>
+
            </div>
        </section>
    </div>
   
-   <!-- Footer at the bottom with social links -->
+
    <footer class="bg-[#131514c4] p-5 mt-auto shadow-inner text-center text-xl">
        <div class="flex justify-center space-x-6">
            <a href="https://www.linkedin.com/in/spencer-luke/" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
