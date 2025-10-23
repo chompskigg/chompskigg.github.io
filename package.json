@@ -1,0 +1,25 @@
+{
+  "name": "chompskigg.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./dist/output.css --minify",
+    "watch": "npx @tailwindcss/cli -i ./input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chompskigg/chompskigg.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chompskigg/chompskigg.github.io/issues"
+  },
+  "homepage": "https://github.com/chompskigg/chompskigg.github.io#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.15",
+    "tailwindcss": "^4.1.15"
+  }
+}
