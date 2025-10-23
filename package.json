@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/chompskigg/chompskigg.github.io#readme",
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/cli": "^4.1.15",
     "tailwindcss": "^4.1.15"
   }
