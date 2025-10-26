@@ -6,71 +6,6 @@
    <title>Spencer Luke</title>
    <link href="./dist/output.css" rel="stylesheet">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-   <style>
-        .body {
-            margin: 0;
-            background: url('assets/images/background.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-       .container {
-          
-           max-width: 1504px;
-           margin: 0 auto;
-           padding: 2rem 1rem; 
-       }
-
-       .image-gallery {
-           display: flex;
-           flex-wrap: wrap;
-           gap: 2rem; 
-           justify-content: center; 
-           margin-top: 2rem;
-       }
-
-       .image-gallery img {
-           width: 100%; 
-           height: auto;
-           object-fit: cover;
-           border-radius: 0.5rem; 
-           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); 
-          
-           transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-       }
-
-       .image-gallery img:hover {
-           transform: scale(1.03);
-           box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-       }
-
-       .image-card {
-           width: 100%;
-       }
-
-       @media (min-width: 640px) {
-           .image-card {
-               width: calc(50% - 1rem);
-           }
-       }
-
-       .case-study {
-           border-radius: 12px;
-           overflow: hidden;
-           transition: transform 0.4s ease, box-shadow 0.4s ease;
-           box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-       }
-       .case-study:hover {
-           transform: scale(1.03);
-           box-shadow: 0 8px 30px rgba(0,0,0,0.6);
-       }
-       .case-study .overlay {
-           background-color: rgba(0,0,0,0.4);
-           transition: background-color 0.4s ease;
-       }
-       .case-study:hover .overlay {
-           background-color: rgba(0,0,0,0.2);
-       }
-   </style>
-
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen">
@@ -89,7 +24,7 @@
 
    <div class="container flex-grow mt-16">
        <!-- Main content of the page -->
-       <div class="mt-24 flex flex-col md:flex-row justify-between items-center p-4">
+       <div class="mt-4 flex flex-col md:flex-row justify-between items-center p-4">
            <h1 class="text-3xl md:text-[48px] font-bold font-serif md:w-3/5">
                <span class="font-merriweather">
                    A UX researcher completing my masters in HCI at Georgia Tech seeking roles in tech and games
@@ -99,7 +34,7 @@
                <p class="text-white big-inter-text">
                    I'm Spencer Luke, a UX researcher with a background in HCI. I leverage my experience in tech UI/UX, game playtests, and academic research to advocate for the user and create human-centered experiences. 
                </p>
-                <div class="grid grid-cols-[auto,1fr] gap-x-2 font-inter text-base big-inter-text">
+                <div class="grid grid-cols-[auto,1fr] gap-x-2 font-inter text-base">
                     <span class="text-gray-400 block">Last at:</span>
                     <span class="text-white block">UXR Intern @ Google</span>
 
@@ -118,7 +53,7 @@
 
                <a href="google/" class="image-card block">
                     <div class="">
-                        <img src="assets/images/test.png" alt="Google project thumbnail">
+                        <img src="assets/images/google-thumbnail.png" alt="Google project thumbnail">
                         <h3 class="text-xl font-semibold mt-2">Gemini and Agentic Tools</h3>
                         <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Google</p>
                     </div>
@@ -126,7 +61,7 @@
 
                 <a href="marta/" class="image-card block">
                     <div class="">
-                        <img src="assets/images/test.png" alt="MARTA project thumbnail">
+                        <img src="assets/images/marta-thumbnail.png" alt="MARTA project thumbnail">
                         <h3 class="text-xl font-semibold mt-2">World Cup Transit Experience</h3>
                         <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">MARTA</p>
                     </div>
@@ -134,7 +69,7 @@
 
                 <a href="#" class="image-card block">
                     <div class="">
-                        <img src="assets/images/test.png" alt="AI Accessibility in Gaming thumbnail">
+                        <img src="assets/images/gaming-thumbnail.png" alt="AI Accessibility in Gaming thumbnail">
                         <h3 class="text-xl font-semibold mt-2">AI-Powered Accessibility in Gaming</h3>
                         <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Georgia Tech</p>
                     </div>
@@ -142,7 +77,7 @@
               
                 <a href="wellplayed/" class="image-card block">
                     <div class="">
-                        <img src="assets/images/test.png" alt="Well Played thumbnail">
+                        <img src="assets/images/wellplayed-thumbnail.png" alt="Well Played thumbnail">
                         <h3 class="text-xl font-semibold mt-2">Think Aloud Playtest</h3>
                         <p class="text-md text-gray-400 border-b-2 border-gray-500 pb-5">Well Played Research</p>
                     </div>
