@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Spencer Luke | Google</title>
-   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="../dist/output.css" rel="stylesheet">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
    <style>
@@ -22,7 +22,7 @@
        }
       
        .container {
-           max-width: 1000px;
+           max-width: 1500px;
            margin: 0 auto;
            padding: 2rem 1rem;
            flex-grow: 1;
@@ -132,20 +132,18 @@
             opacity: 0.3;
             cursor: not-allowed;
         }
+
+
         #protected-content {
             display: none;
         }
 
-        /* StatiCrypt CSS*/
         .staticrypt-password-container {
            position: relative;
            outline: 0;
            width: 100%;
            border: 0;
            margin: 0 0 15px;
-       }
-       .staticrypt-password-container input {
-           color: #000000; /* Make text visible against light background */
        }
        .staticrypt-form input[type="password"] {
            background: inherit;
@@ -223,7 +221,7 @@
 
        <section id="password-section-container" class="w-full content-card flex flex-col md:flex-row items-start gap-8 p-6 rounded-lg shadow-md justify-center">
             <div class="w-full max-w-2xl p-8 rounded-xl shadow-2xl transition-all duration-300">
-                <h1 class="text-4xl font-bold mb-4 text-center">Password Protected</h1>
+                <h1 class="text-4xl font-bold mb-4 text-center font-merriweather">Password Protected</h1>
                 <p class="mb-6 text-center big-inter-text">Enter password to view case study</p>
 
                 <form id="staticrypt-form" action="#" method="post">
@@ -254,7 +252,7 @@
                     <input type="submit" class="w-full text-center p-3 text-lg text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition duration-150 block mt-4 staticrypt-decrypt-button" value="Unlock" />
                     <p id="decryption-error-message" class="text-red-500 mt-2 hidden big-inter-text">Incorrect Password. Please try again.</p>
                 </form>
-                </div>
+            </div>
        </section>
 
        <div id="protected-content" style="display:none;"></div>
@@ -892,7 +890,7 @@ exports.init = init;
                 templateToggleAltShow = "template_toggle_show",
                 templateToggleAltHide = "template_toggle_hide",
                 isRememberEnabled = false,
-                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"14c2962ae411d7774f8535f6be37b172ae5896e653e9a1dc9dc3c44ee664fdb2d4f185b99dcf70125591dce90b6b76e4dc468d9d39c1eb0db2c90cabbb67e1fe96fd6b8e530efcfa3fb00b34f4cb43d9a2e7112e224de81f7bed7ace4ff237e6166b9df0c0eb1d6535bea64dff510588d68f3a175acb47bb7efa2f676fd82dd74417cca0b2266e939269cd28b5e65e7a0e583badb44bd82cab344bb15fcb5ed6ab5f67d61fed49d5c719cc5f5ee0880240c94d305b1b326d565fe5bebe17a250ed2b8fd8d9580bd09c5e714f48f25c5a37ddbc39c85e079111fe42d28f1437f4e454bd2da4cc42366d993676cecf08d62a1ff8e159cee0c6ed75efdc88854a2556875b2a1afc5e348f4725a2cc394f055cd903548f25ccf5f3e46a551a7219d6ecf554396a3bd6c99069c9a0ac82e08856b98d64871e568019f898859594cc96581eb49c0ee8eaca8af19fe63b0d3d2087aadbf8923b6c818d9a5f8be47ba0d07558e4251ec6b736c41dceb79850ea7517b445a6e779df0b7bf56954329ae892571d51409f0b333feeee56bb856f872b7116db74aab84e7f595887a72534ab514aaf6a46774125d8ae0514731d2095810df2d00c3dd12be3b95ed96f699f5e8fec6acdffb950dbde046f65cfc9177cafcc49400d914f83338a81b07b2c5ebe71e7aedf96483d5c5be2acb9edf2ae275c716b1b6fdd645cae9718141c53393773c835ebbed49aaa938b4f2f27b81b598fc12df42b26215fec7bd4e0ec71f27758a69b0af9421bbd04b8201a4cb7cedf344c21d28d1bcdd3c3f6edf21c38cf57069eaf90f7c669aa61eae783c4d2fec28cbfeb0142e4d3f04602d8cdf342661b4da9db458c883a65edb0270502564ea0d1e1f78f64e2751d265cab3c53c20be680974ba29e3f5f176405731db9012de2b974cd1de7849c659896758ed9f858ad3cc63571ada893ee60065440620ac7ae743930f846d83a3593c5065b9e2df4f293526c3d9cab675a04e503dc83a1a67c14062da704c8780c4ec93a780803e5646b9b5a3bc3b8704e746898d1a93bccb193d5abed530a37bb5590b93a175d34181a73323e34832cc5cc2e84423608f900dbab6a0973315aa1fd38c4bdb07869ef6295c428bfb5db07428ca1418c3839d382f8992062943d3c69121a814edb88020370028ff695ecc52cff428bda038cc776e70d6b0c2e7079a3dce43978b86e9811c089fa3c144596bc4bd2bd51bc10378e","isRememberEnabled":false,"rememberDurationInDays":0,"staticryptSaltUniqueVariableName":"ee7f02e6c4238d49fb7938b9d0c2d12a"};
+                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"507db6788add0ed2689eaf89322fa15c0c213ebdab8356e7ea6629359e448826fe1850baa3a39159af9d90ba7d5b225801b9d314f54bff71071b590a0e509ad0baba29537695600be1f38c291546be8c7f640f10370b72f3f8f24d05abcc253852491f724537d0fd61a9ae63d80a86f43d3d337c1f59826224951f0089dd4ac8f3d1f886eeb16adcbe8a58013afe446d41fa4c173d64dcc673fff843bcb5ed84df809651df3a0a50629dc9193aafa1c5e27da11295989310660282130a98ad6db57adc3a9395f7ef390fa124f2ac0e64bdf91b93ce47092e24d1d481b97f78bf66e4344d52e7e62f60650a91ed7cf421c67b5986b1679e678f9d3b6b07a1f34399835c2d5c5a7b5eace29a835c827ecc018aa90f8a24626942dabdaf340183195a62960291fa18cac36a160ab970b1b6dbd732be73d7e0ebf4dcf8b8e8f1a3c9f726c9603dd6645d3813a546da32bc28fb356cc19d34828c74ef0dcb617e38ad1735b0c6e5c04cb70aa3d821e19b9566cffab053bdd28b27b5e6a0ade45d1d988bb1a754bc6bcb508f01bb942c147d3f238e45aa0cb39cf1ea4d448a2fb963277d2e33b2602ecc42c471958d2cdf7d4578c29ed465f572b111d9abf50c51a21c1e15d4d51dcf7e86d11a8516e94a753cebcacd9c0ad17a2644e0ea12e680266dc95a25ab1da597c2fd50ee1ad146557588ab1ee4dae1d7293d219b3fb33f0d57c0a6b7e794680b79099aab892ac0b9c8433d52d74f66e32f10a48d3a86b488b3f6892812497125e1e9ecd290213f6eb2a8108cc88cf225a1f974258c58c5cc1ed40e83334dfe0b527c4667a292b434d13a4bb94e09c8bbc6d2a79f23cbd6252c237ab0cd740d4da2431a5e7cfdfccaa405892bfbc04ebb81f2bb7f4164ff0c42626cceb9d85ebcca84092a42e679930cdf23720816b01c16611f937538a960e89f3208a1a3692203267cdb69ca0d3f563ac32579ccb522cac3c6bf8af557da88bee1981d8a7af94f79c94d715c2bf92ab6894313c2d6498b04de40ebcda461b3d02f6fba71e353910fecbc59ced8987e2712cb03a2bb32eb68bdf1754229e16de380f9b360bf2bbb46039654e10e92b4a88ce9fa7c6466cd1745a0f1937ea51ffb0dbcf47bb781398033228c534c6dca10784cae5af87eaeb25a3537cd62cafd1d5953f67b936883f00dfc5a71776e541bbab7074bd650d41ce82e66b421c45a","isRememberEnabled":false,"rememberDurationInDays":0,"staticryptSaltUniqueVariableName":"2df9f106323eaced0cbabc5e262d9dd6"};
 
             // you can edit these values to customize some of the behavior of StatiCrypt
             const templateConfig = {
