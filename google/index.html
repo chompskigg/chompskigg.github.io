@@ -810,7 +810,7 @@ exports.init = init;
 
                     // Focus the password input if present
                     const pwd = document.getElementById("staticrypt-password");
-                    if (pwd) pwd.focus();
+                    if (pwd) pwd.focus({ preventScroll: true });
 
                     // Reveal remember me if your template enabled it and the label exists
                     if (isRememberEnabled) {
