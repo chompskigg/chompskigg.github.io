@@ -12,12 +12,56 @@
         color: #ffffff; 
         margin: 0;
         padding: 0;
-        background: #131514c4 url('../assets/images/background.jpg') no-repeat center center fixed;
+        /* background: #131514c4 url('../assets/images/background.jpg') no-repeat center center fixed; */
+        background: #050510;
         background-size: cover;
     }    
 }
 
 @layer components {
+    .lava-lamp-bg {
+        position: fixed;
+        inset: 0;
+        overflow: hidden;
+    }
+
+    .blob {
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        top: -25%;
+        left: -25%;
+        background: radial-gradient(circle at center, rgba(80,0,180,0.5), transparent 70%);
+        animation: moveBlob 45s infinite ease-in-out alternate;
+        mix-blend-mode: screen;
+        filter: blur(80px);
+    }
+
+    .blob:nth-child(2) {
+        background: radial-gradient(circle at center, rgba(0,100,180,0.45), transparent 70%);
+        animation: moveBlob2 60s infinite ease-in-out alternate;
+        animation-delay: -15s;
+    }
+
+    .blob:nth-child(3) {
+        background: radial-gradient(circle at center, rgba(180,0,120,0.4), transparent 70%);
+        animation: moveBlob3 70s infinite ease-in-out alternate;
+        animation-delay: -30s;
+    }
+
+    .grain {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+        opacity: 0.08;
+        mix-blend-mode: overlay;
+    }
+    .content {
+        position: relative;
+    }
+
+
     .container {
         max-width: 1504px;
         margin: 0 auto;
@@ -125,4 +169,30 @@
     }
 
 
+}
+
+@layer utilities {
+    @keyframes moveBlob {
+    0% { transform: translate(-10%, -10%) scale(1); }
+    25% { transform: translate(20%, 10%) scale(1.3); }
+    50% { transform: translate(-15%, 25%) scale(1.1); }
+    75% { transform: translate(25%, -15%) scale(1.4); }
+    100% { transform: translate(-20%, 10%) scale(1.2); }
+  }
+
+  @keyframes moveBlob2 {
+    0% { transform: translate(10%, 20%) scale(1); }
+    25% { transform: translate(-15%, -10%) scale(1.3); }
+    50% { transform: translate(20%, -25%) scale(1.2); }
+    75% { transform: translate(-10%, 15%) scale(1.4); }
+    100% { transform: translate(15%, -10%) scale(1.1); }
+  }
+
+  @keyframes moveBlob3 {
+    0% { transform: translate(5%, -15%) scale(1.1); }
+    25% { transform: translate(-25%, 20%) scale(1.4); }
+    50% { transform: translate(15%, 25%) scale(1.2); }
+    75% { transform: translate(-10%, -20%) scale(1.5); }
+    100% { transform: translate(20%, 10%) scale(1.2); }
+  }
 }

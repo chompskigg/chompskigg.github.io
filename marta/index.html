@@ -116,1120 +116,1129 @@
    </style>
 </head>
 <body class="flex flex-col min-h-screen">
+    <div class="lava-lamp-bg">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="grain"></div>
+    </div>
 
-
-   <!-- Navigation bar -->
-   <nav class="bg-[#131514c4] p-4 flex justify-between items-center shadow-lg">
-       <div class="container flex justify-end sm:justify-between items-center px-4">
-           <span class="hidden sm:block text-white text-2xl font-semibold"><a href="/" class="hover:text-gray-400">spencer luke</a></span>
-           <ul class="flex space-x-6">
-               <li><a href="/" class="text-white hover:text-gray-400 text-xl font-semibold">work</a></li>
-               <li><a href="../about/" class="text-white hover:text-gray-400 text-xl font-semibold">about</a></li>
-               <li><a href="https://drive.google.com/file/d/1QOIxv4yUMhOUyKNPmPDkbpIku_KGq-np/view?usp=sharing" class="text-white hover:text-gray-400 text-xl font-semibold">resume</a></li>
-           </ul>
-       </div>
-   </nav>
-
-
-   <!-- Main content container -->
-   <div class="container mt-16 flex-grow">
-        <div class="flex flex-col md:flex-row justify-between items-center p-4 gap-8">
-            <h1 class="text-3xl md:text-[48px] font-bold font-serif">
-                <span class="font-merriweather">World Cup Transit Experience <span class="text-gray-400">for MARTA</span></span>
-            </h1>
-        </div>
-      
-       <!-- Redesigned Overview Section -->
-       <section class="content-card">
-           <div class="flex flex-col md:flex-row gap-8 text-content">
-               <!-- Left column for Summary -->
-               <div class="flex-1">
-                   <h3 class="text-xl font-semibold text-gray-400 tracking-widest mb-2 small-inter-text">Summary</h3>
-                   <p class="big-inter-text">In this four-month UX research project, I led a team to address the problem of MARTA's fragmented user experience, which poses a significant challenge for the large crowds expected during the 2026 World Cup in Atlanta. My team and I used a multi-method approach, including surveys, interviews, and observations, to understand user needs. I then designed and evaluated a high-fidelity prototype for a unified MARTA app, combining features for trip planning, ticketing, and safety. Providing MARTA with key research and design recommendations, this project laid the groundwork for a user-friendly digital tool to enhance accessibility and promote transit use for the World Cup.</p>
-                   <h3 class="mt-4 text-xl font-semibold text-gray-400 tracking-widest mb-2 small-inter-text">Problem Statement</h3>
-                   <p class="big-inter-text">How might we develop a user-friendly digital tool that enhances accessibility and promotes MARTA use during the 2026 World Cup?</p>
-               </div>
-               <!-- Right column for Details Grid -->
-               <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm ">
-                   <div>
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Role</h4>
-                       <p>UX Researcher, Team Lead</p>
-                   </div>
-                   <div>
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Team</h4>
-                       <p>2 Designers, 2 Researchers</p>
-                   </div>
-                   <div>
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Timeline</h4>
-                       <p>August 2025 - December 2025</p>
-                   </div>
-                   <div>
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Tools</h4>
-                       <p>Figma, Qualtrics, MaxQDA</p>
-                   </div>
-                   <div class="sm:col-span-2">
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Methods</h4>
-                       <p>Interview, Focus Group, Survey, Observation, Heuristics, Usability Testing</p>
-                   </div>
-                   <div>
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Design</h4>
-                       <p>Sketches, Wireframes, Prototyping</p>
-                   </div>
-                   <div>
-                       <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Evaluation</h4>
-                       <p>Heuristic Evaluation, Usability Tests</p>
-                   </div>
-               </div>
-           </div>
-       </section>
-
-       <!-- My Team & Problem Section -->
-        <section class="w-full content-card flex flex-col md:flex-row items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="image-content flex justify-center w-full md:w-1/2">
-                <img src="../assets/images/marta/team2.jpg" alt="the marta team" class="rounded-lg shadow-lg w-full h-auto">
+    <div class="content">
+           <!-- Navigation bar -->
+        <nav class="bg-[#131514c4] p-4 flex justify-between items-center shadow-lg">
+            <div class="container flex justify-end sm:justify-between items-center px-4">
+                <span class="hidden sm:block text-white text-2xl font-semibold"><a href="/" class="hover:text-gray-400">spencer luke</a></span>
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="text-white hover:text-gray-400 text-xl font-semibold">work</a></li>
+                    <li><a href="../about/" class="text-white hover:text-gray-400 text-xl font-semibold">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QOIxv4yUMhOUyKNPmPDkbpIku_KGq-np/view?usp=sharing" class="text-white hover:text-gray-400 text-xl font-semibold">resume</a></li>
+                </ul>
             </div>
-            <div class="text-content w-full md:w-1/2">
-                <h2 class="text-4xl font-bold text-blue-400 mb-4">My Team</h2>
-                <div class="table text-base mt-5">
-                    <div class="table-row">
-                        <span class="table-cell big-inter-text pr-10">Spencer Luke (Me)</span>
-                        <span class="table-cell text-gray-400 pr-3">Lead Research</span>
-                    </div>
-                    <div class="table-row">
-                        <span class="table-cell big-inter-text pr-10">Dani Generous</span>
-                        <span class="table-cell text-gray-400 pr-3">Research and Writing</span>
-                    </div>
-                    <div class="table-row">
-                        <span class="table-cell big-inter-text pr-10">Echo Cho</span>
-                        <span class="table-cell text-gray-400 pr-3">Lead Design</span>
-                    </div>
-                    <div class="table-row">
-                        <span class="table-cell big-inter-text pr-10">Shachika Thanigaivelu</span>
-                        <span class="table-cell text-gray-400 pr-3">Design and Writing</span>
-                    </div>
-                </div>
-                <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Contribution</h3>
-                <p class="text-gray-700">I led the research effort by developing research plans, defining objectives, and creating interview guides. I also served as the primary liaison with MARTA partners and organized research by coordinating interviews, focus groups, and meetings.</p>
-            </div>
-        </section>
+        </nav>
 
 
-        <!-- Problem & Research Questions -->
-        <div class="flex flex-col md:flex-row gap-8">
-            <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-                <div class="text-content">
-                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Defining the Problem</h2>
-                    <p class="mt-5">Atlanta anticipates 300,000+ visitors for the 2026 World Cup, with 75% from out of state. Qatar's tourism surge after the 2022 World Cup represents the significant impact of a successful event. My team aims to design solutions to enhance the World Cup experience, starting by identifying primary users.</p>
-                    <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Primary Users and Shareholders</h3>
-                    <p>At the core of our research and design process are the diverse visitors and locals attending the 2026 World Cup in Atlanta.</p>
+        <!-- Main content container -->
+        <div class="container mt-16 flex-grow">
+                <div class="flex flex-col md:flex-row justify-between items-center p-4 gap-8">
+                    <h1 class="text-3xl md:text-[48px] font-bold font-serif">
+                        <span class="font-merriweather">World Cup Transit Experience <span class="text-gray-400">for MARTA</span></span>
+                    </h1>
                 </div>
-                <div class="image-content">
-                    <img src="../assets/images/marta/stakeholders.png" alt="train image showing stakeholders" class="rounded-lg shadow-lg mt-5">
-                </div>
-                <div class="text-content">
-                    <p>I designed with a wide range of users in mind, including people with disabilities, residents, employees, city services, and local businesses.</p>
+            
+            <!-- Redesigned Overview Section -->
+            <section class="content-card">
+                <div class="flex flex-col md:flex-row gap-8 text-content">
+                    <!-- Left column for Summary -->
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Summary</h3>
+                        <p class="big-inter-text">In this four-month UX research project, I led a team to address the problem of MARTA's fragmented user experience, which poses a significant challenge for the large crowds expected during the 2026 World Cup in Atlanta. My team and I used a multi-method approach, including surveys, interviews, and observations, to understand user needs. I then designed and evaluated a high-fidelity prototype for a unified MARTA app, combining features for trip planning, ticketing, and safety. Providing MARTA with key research and design recommendations, this project laid the groundwork for a user-friendly digital tool to enhance accessibility and promote transit use for the World Cup.</p>
+                        <h3 class="mt-4 font-semibold text-gray-400 tracking-widest mb-2 small-inter-text">Problem Statement</h3>
+                        <p class="big-inter-text">How might we develop a user-friendly digital tool that enhances accessibility and promotes MARTA use during the 2026 World Cup?</p>
+                    </div>
+                    <!-- Right column for Details Grid -->
+                    <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm ">
+                        <div>
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Role</h4>
+                            <p>UX Researcher, Team Lead</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Team</h4>
+                            <p>2 Designers, 2 Researchers</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Timeline</h4>
+                            <p>August 2025 - December 2025</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Tools</h4>
+                            <p>Figma, Qualtrics, MaxQDA</p>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Methods</h4>
+                            <p>Interview, Focus Group, Survey, Observation, Heuristics, Usability Testing</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Design</h4>
+                            <p>Sketches, Wireframes, Prototyping</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-400 tracking-widest mb-1 small-inter-text">Evaluation</h4>
+                            <p>Heuristic Evaluation, Usability Tests</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-                <div class="text-content">
-                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Research Questions</h2>
-                    <div class="grid grid-cols-[5%_45%_50%] gap-2 p-4 big-inter-text">
-                        <div class="font-bold p-2 text-center"></div>
-                        <div class="font-bold p-1">Research Question</div>
-                        <div class="font-bold p-1">Rationale</div>
-                        
-                        <div class="p-1 text-center">1.</div>
-                        <div class="p-1">What features of transit systems do users prioritize when using public transportation?</div>
-                        <div class="p-1">By understanding what users value, we can tailor an experience to best meet their needs.</div>
-
-                        <div class="p-1 text-center">2.</div>
-                        <div class="p-1">How do users decide whether to ride public transportation for events or choose alternatives?</div>
-                        <div class="p-1">Understanding why people may avoid MARTA allows us to improve services and better communicate its benefits.</div>
-                        
-                        <div class="p-1 text-center">3.</div>
-                        <div class="p-1">What barriers do people face when planning and riding public transportation?</div>
-                        <div class="p-1">Identifying confusion, limitations, and accessibility issues helps us develop solutions to boost MARTA use.</div>
-
-                        <div class="p-1 text-center">4.</div>
-                        <div class="p-1">What is the user perception of MARTA?</div>
-                        <div class="p-1">Understanding user perception helps us target weak points in MARTA.</div>
-
-                        <div class="p-1 text-center">5.</div>
-                        <div class="p-1">What problems do users face during times of high traffic on MARTA?</div>
-                        <div class="p-1">Understanding the key issues allows us to explore ways to alleviate them through interactive design.</div>
+            <!-- My Team & Problem Section -->
+                <section class="w-full content-card flex flex-col md:flex-row items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="image-content flex justify-center w-full md:w-1/2">
+                        <img src="../assets/images/marta/team2.jpg" alt="the marta team" class="rounded-lg shadow-lg w-full h-auto">
                     </div>
-                </div>
-            </section>
-        </div>
+                    <div class="text-content w-full md:w-1/2">
+                        <h2 class="text-4xl font-bold text-blue-400 mb-4">My Team</h2>
+                        <div class="table text-base mt-5">
+                            <div class="table-row">
+                                <span class="table-cell big-inter-text pr-10">Spencer Luke (Me)</span>
+                                <span class="table-cell text-gray-400 pr-3">Lead Research</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="table-cell big-inter-text pr-10">Dani Generous</span>
+                                <span class="table-cell text-gray-400 pr-3">Research and Writing</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="table-cell big-inter-text pr-10">Echo Cho</span>
+                                <span class="table-cell text-gray-400 pr-3">Lead Design</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="table-cell big-inter-text pr-10">Shachika Thanigaivelu</span>
+                                <span class="table-cell text-gray-400 pr-3">Design and Writing</span>
+                            </div>
+                        </div>
+                        <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Contribution</h3>
+                        <p class="text-gray-700">I led the research effort by developing research plans, defining objectives, and creating interview guides. I also served as the primary liaison with MARTA partners and organized research by coordinating interviews, focus groups, and meetings.</p>
+                    </div>
+                </section>
 
-        <!-- Methods -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md mb-2">
-            <div class="text-content">
-                <h2 class="text-4xl font-bold text-blue-400">Research Methods</h2>
-            </div>
-        </section>
-        <!-- Comparative Analysis -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Comparative Analysis</h3>
-                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
+
+                <!-- Problem & Research Questions -->
+                <div class="flex flex-col md:flex-row gap-8">
+                    <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
                         <div class="text-content">
-                            <p class="mb-4">I compared 5 transit systems chosen based on where World Cup fans would likely be coming from.</p>
-                            <ul class="list-disc list-inside big-inter-text mb-4">
-                                <li>São Paulo Metrô</li>
-                                <li>Madrid Metro</li>
-                                <li>New York Subway</li>
-                                <li>Mexico City Metro</li>
-                                <li>London Tube</li>
-                            </ul>
-                            <p>I compared them based on 21 criteria including: coverage, accessibility, and ease of navigation, rating criteria on a scale of 0 to 4. This approach offers a holistic view while allowing evaluation from multiple perspectives.</p>
+                            <h2 class="text-4xl font-bold text-blue-400 mb-4">Defining the Problem</h2>
+                            <p class="mt-5">Atlanta anticipates 300,000+ visitors for the 2026 World Cup, with 75% from out of state. Qatar's tourism surge after the 2022 World Cup represents the significant impact of a successful event. My team aims to design solutions to enhance the World Cup experience, starting by identifying primary users.</p>
+                            <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Primary Users and Shareholders</h3>
+                            <p>At the core of our research and design process are the diverse visitors and locals attending the 2026 World Cup in Atlanta.</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="../assets/images/marta/stakeholders.png" alt="train image showing stakeholders" class="rounded-lg shadow-lg mt-5">
+                        </div>
+                        <div class="text-content">
+                            <p>I designed with a wide range of users in mind, including people with disabilities, residents, employees, city services, and local businesses.</p>
+                        </div>
+                    </section>
+
+                    <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                        <div class="text-content">
+                            <h2 class="text-4xl font-bold text-blue-400 mb-4">Research Questions</h2>
+                            <div class="grid grid-cols-[5%_45%_50%] gap-2 p-4 big-inter-text">
+                                <div class="font-bold p-2 text-center"></div>
+                                <div class="font-bold p-1">Research Question</div>
+                                <div class="font-bold p-1">Rationale</div>
+                                
+                                <div class="p-1 text-center">1.</div>
+                                <div class="p-1">What features of transit systems do users prioritize when using public transportation?</div>
+                                <div class="p-1">By understanding what users value, we can tailor an experience to best meet their needs.</div>
+
+                                <div class="p-1 text-center">2.</div>
+                                <div class="p-1">How do users decide whether to ride public transportation for events or choose alternatives?</div>
+                                <div class="p-1">Understanding why people may avoid MARTA allows us to improve services and better communicate its benefits.</div>
+                                
+                                <div class="p-1 text-center">3.</div>
+                                <div class="p-1">What barriers do people face when planning and riding public transportation?</div>
+                                <div class="p-1">Identifying confusion, limitations, and accessibility issues helps us develop solutions to boost MARTA use.</div>
+
+                                <div class="p-1 text-center">4.</div>
+                                <div class="p-1">What is the user perception of MARTA?</div>
+                                <div class="p-1">Understanding user perception helps us target weak points in MARTA.</div>
+
+                                <div class="p-1 text-center">5.</div>
+                                <div class="p-1">What problems do users face during times of high traffic on MARTA?</div>
+                                <div class="p-1">Understanding the key issues allows us to explore ways to alleviate them through interactive design.</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Methods -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md mb-2">
+                    <div class="text-content">
+                        <h2 class="text-4xl font-bold text-blue-400">Research Methods</h2>
+                    </div>
+                </section>
+                <!-- Comparative Analysis -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Comparative Analysis</h3>
+                                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
+                                <div class="text-content">
+                                    <p class="mb-4">I compared 5 transit systems chosen based on where World Cup fans would likely be coming from.</p>
+                                    <ul class="list-disc list-inside big-inter-text mb-4">
+                                        <li>São Paulo Metrô</li>
+                                        <li>Madrid Metro</li>
+                                        <li>New York Subway</li>
+                                        <li>Mexico City Metro</li>
+                                        <li>London Tube</li>
+                                    </ul>
+                                    <p>I compared them based on 21 criteria including: coverage, accessibility, and ease of navigation, rating criteria on a scale of 0 to 4. This approach offers a holistic view while allowing evaluation from multiple perspectives.</p>
+                                </div>
+                                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
+                                <div class="text-content">
+                                    <p class="mb-4">My analysis revealed MARTA's strengths in navigation, accessibility, and visual design. However, it lagged behind in coverage and reliability, so to effectively support World Cup visitors, MARTA should:</p>
+                                    <ul class="list-disc list-inside big-inter-text">
+                                        <li>Simplify and expand ticketing systems.</li>
+                                        <li>Improve station navigation and system usability.</li>
+                                        <li>Enhance safety features to reduce user stress and fears.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="image-content w-full md:w-1/2 flex flex-col justify-center mt-8 gap-5">
+                                <img src="../assets/images/marta/comparative.jpg" alt="comparative analysis" class="rounded-lg shadow-lg w-full h-auto">
+                                <img src="../assets/images/marta/mexico_metro.jpg" alt="mexico city metro" class="rounded-lg shadow-lg w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Surveys -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Surveys</h3>
+                                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
+                                <div class="text-content">
+                                    <p class="mb-4">After refining our survey questions, I distributed surveys outside of the Atlanta World Cup venue, Mercedes-Benz Stadium. Soccer fans travelling to the stadium for events perfectly fit our target behavior.</p>
+                                    <p>Using QR codes, I collected <b>104</b> responses with 18 questions using Qualtrics. I then visualizaed the data in graphs, tables, and charts.</p>
+                                </div>
+                            </div>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/survey2.jpg" alt="comparative analysis" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
+                                <img src="../assets/images/marta/survey_response.jpg" alt="comparative analysis" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
+                            </div>
                         </div>
                         <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
-                        <div class="text-content">
-                            <p class="mb-4">My analysis revealed MARTA's strengths in navigation, accessibility, and visual design. However, it lagged behind in coverage and reliability, so to effectively support World Cup visitors, MARTA should:</p>
+                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
+
+                            <!-- Card 1: Most important transit app features -->
+                            <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
+                                    Most important transit app features
+                                </h2>
+                                <ul class="space-y-2 text-lg">
+                                    <li><span class="font-medium">Real-time updates</span> (26%)</li>
+                                    <li><span class="font-medium">Fare payment</span> (22%)</li>
+                                    <li><span class="font-medium">Event suggestions</span> (13%)</li>
+                                    <li><span class="font-medium">Crowd info</span> (13%)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Card 2: Transit alternatives chosen because -->
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
+                                    Transit alternatives chosen because
+                                </h2>
+                                <ul class="space-y-2  text-lg">
+                                    <li><span class="font-medium">Crime/harassment</span> (27%)</li>
+                                    <li><span class="font-medium">Reliability</span> (24%)</li>
+                                    <li><span class="font-medium">Train issues</span> (17%)</li>
+                                    <li><span class="font-medium">Real-time info gaps</span> (15%)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Card 3: MARTA riders most concerned with -->
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
+                                    MARTA riders most concerned with
+                                </h2>
+                                <ul class="space-y-2 text-lg">
+                                    <li><span class="font-medium">Inconvenience</span> (27%)</li>
+                                    <li><span class="font-medium">Accessibility</span> (15%)</li>
+                                    <li><span class="font-medium">Transit Cost</span> (10%)</li>
+                                    <li><span class="font-medium">Service Reliability</span> (9%)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Semi-Structured Interviews -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Semi-Structured Interviews</h3>
+                                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
+                                <div class="text-content">
+                                    <p class="mb-4">From surveys and MARTA community groups, our team recruited several interview participants. I then conducted 10 interviews lasting between 25 to 50 minutes each. Interviewees consisted of consistent MARTA users, riders with disabilities, and travelling sport fans.</p>
+                                    <p>I used interviews to gather thick, in-depth qualitative data to better understand user experiences and pain-points from various perspectives.</p>
+                                </div>
+                            </div>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/interview1.png" alt="interview 2" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
+                                <img src="../assets/images/marta/interview2.png" alt="interview 1" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
+                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
+                            <p class="mb-4">I analyzed our interview findings by coding the transcript data using MAXQDA. I then organized key points into an affinity map to organized overall findings.</p>
+                        </div>
+                        <div class="text-content mb-4">
                             <ul class="list-disc list-inside big-inter-text">
                                 <li>Simplify and expand ticketing systems.</li>
                                 <li>Improve station navigation and system usability.</li>
                                 <li>Enhance safety features to reduce user stress and fears.</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="image-content w-full md:w-1/2 flex flex-col justify-center mt-8 gap-5">
-                        <img src="../assets/images/marta/comparative.jpg" alt="comparative analysis" class="rounded-lg shadow-lg w-full h-auto">
-                        <img src="../assets/images/marta/mexico_metro.jpg" alt="mexico city metro" class="rounded-lg shadow-lg w-full h-auto">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Surveys -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Surveys</h3>
-                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
-                        <div class="text-content">
-                            <p class="mb-4">After refining our survey questions, I distributed surveys outside of the Atlanta World Cup venue, Mercedes-Benz Stadium. Soccer fans travelling to the stadium for events perfectly fit our target behavior.</p>
-                            <p>Using QR codes, I collected <b>104</b> responses with 18 questions using Qualtrics. I then visualizaed the data in graphs, tables, and charts.</p>
+                        <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
+                                <img src="../assets/images/marta/maxqda.png" alt="interview 2" class="rounded-lg shadow-lg w-full h-auto">
+                                <img src="../assets/images/marta/affinitymap.png" alt="interview 1" class="rounded-lg shadow-lg w-full h-auto">
                         </div>
                     </div>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/survey2.jpg" alt="comparative analysis" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
-                        <img src="../assets/images/marta/survey_response.jpg" alt="comparative analysis" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
-                    </div>
-                </div>
-                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
-                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
+                </section>
+                <!-- Ethnographic Observations -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Ethnographic Observations</h3>
+                                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
+                                <div class="text-content">
+                                    <p class="mb-4">Our team conducted 2 types of ethnographic observations each lasting around 1 hour. We wanted to gain a deep understanding of the behaviors and interactions of users in a natural environment.</p>
+                                </div>
+                            </div>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/observation.jpg" alt="phase 1 observation" class="rounded-lg shadow-lg w-full h-auto">
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full">
+                                <div class="flex flex-col md:flex-row gap-5">
+                                    <div class="w-full md:w-1/2">
+                                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">Phase 1</h2>
+                                        <div class="text-content mb-4">
+                                            <p>In phase 1, our team took observational notes travelling to the Mercedes-Benz stadium during a soccer match, taking notes on features and behaviors.</p>
+                                        </div>
+                                        <div class="image-content flex justify-center items-center mb-4">
+                                            <img src="../assets/images/marta/observation4.jpg" alt="phase 1 observation" class="rounded-lg shadow-lg w-full h-auto">
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 ">
+                                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">Phase 2</h2>
+                                        <div class="text-content mb-4">
+                                            <p>In phase 2, each team member followed specific people on their transit journey, such as groups and foreign riders.</p>
+                                        </div>
+                                        <div class="image-content flex justify-center items-center mb-4">
+                                            <img src="../assets/images/marta/observation3.jpg" alt="phase 2 observation" class="rounded-lg shadow-lg w-full h-auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
+                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
+                            <p class="mb-4">Notes for both phases were recorded in observational charts in Figma to best analyze the results. From the analysis I found:</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
 
-                    <!-- Card 1: Most important transit app features -->
-                    <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
-                            Most important transit app features
-                        </h2>
-                        <ul class="space-y-2 text-lg">
-                            <li><span class="font-medium">Real-time updates</span> (26%)</li>
-                            <li><span class="font-medium">Fare payment</span> (22%)</li>
-                            <li><span class="font-medium">Event suggestions</span> (13%)</li>
-                            <li><span class="font-medium">Crowd info</span> (13%)</li>
-                        </ul>
-                    </div>
+                            <!-- Card 1: Most important transit app features -->
+                            <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
+                                    Group Travellers
+                                </h2>
+                                <ul class="space-y-2 big-inter-text">
+                                    <li><span class="font-medium">Struggled to scan QR tickets</span></li>
+                                    <li><span class="font-medium">Relied on group members to make decisions</span></li>
+                                    <li><span class="font-medium">More delays at turnstile gates</span></li>
+                                </ul>
+                            </div>
 
-                    <!-- Card 2: Transit alternatives chosen because -->
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
-                            Transit alternatives chosen because
-                        </h2>
-                        <ul class="space-y-2  text-lg">
-                            <li><span class="font-medium">Crime/harassment</span> (27%)</li>
-                            <li><span class="font-medium">Reliability</span> (24%)</li>
-                            <li><span class="font-medium">Train issues</span> (17%)</li>
-                            <li><span class="font-medium">Real-time info gaps</span> (15%)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 3: MARTA riders most concerned with -->
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
-                            MARTA riders most concerned with
-                        </h2>
-                        <ul class="space-y-2 text-lg">
-                            <li><span class="font-medium">Inconvenience</span> (27%)</li>
-                            <li><span class="font-medium">Accessibility</span> (15%)</li>
-                            <li><span class="font-medium">Transit Cost</span> (10%)</li>
-                            <li><span class="font-medium">Service Reliability</span> (9%)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Semi-Structured Interviews -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Semi-Structured Interviews</h3>
-                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
-                        <div class="text-content">
-                            <p class="mb-4">From surveys and MARTA community groups, our team recruited several interview participants. I then conducted 10 interviews lasting between 25 to 50 minutes each. Interviewees consisted of consistent MARTA users, riders with disabilities, and travelling sport fans.</p>
-                            <p>I used interviews to gather thick, in-depth qualitative data to better understand user experiences and pain-points from various perspectives.</p>
+                            <!-- Card 2: Transit alternatives chosen because -->
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
+                                    Transit alternatives chosen because
+                                </h2>
+                                <ul class="space-y-2 big-inter-text">
+                                    <li><span class="font-medium">Hesitated or showed confusion about directions</span></li>
+                                    <li><span class="font-medium">Frequently used phone for directions</span></li>
+                                    <li><span class="font-medium">Moved quickly through gates</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/interview1.png" alt="interview 2" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
-                        <img src="../assets/images/marta/interview2.png" alt="interview 1" class="rounded-lg shadow-lg w-full md:w-1/2 h-auto">
-                    </div>
-                </div>
-                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
-                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
-                    <p class="mb-4">I analyzed our interview findings by coding the transcript data using MAXQDA. I then organized key points into an affinity map to organized overall findings.</p>
-                </div>
-                <div class="text-content mb-4">
-                    <ul class="list-disc list-inside big-inter-text">
-                        <li>Simplify and expand ticketing systems.</li>
-                        <li>Improve station navigation and system usability.</li>
-                        <li>Enhance safety features to reduce user stress and fears.</li>
-                    </ul>
-                </div>
-                <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
-                        <img src="../assets/images/marta/maxqda.png" alt="interview 2" class="rounded-lg shadow-lg w-full h-auto">
-                        <img src="../assets/images/marta/affinitymap.png" alt="interview 1" class="rounded-lg shadow-lg w-full h-auto">
-                </div>
-            </div>
-        </section>
-        <!-- Ethnographic Observations -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Ethnographic Observations</h3>
-                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
-                        <div class="text-content">
-                            <p class="mb-4">Our team conducted 2 types of ethnographic observations each lasting around 1 hour. We wanted to gain a deep understanding of the behaviors and interactions of users in a natural environment.</p>
+                </section>
+                <!-- Video Observations -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Video Observations</h3>
+                                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
+                                <div class="text-content">
+                                    <p class="mb-4">Our team got permission from MARTA to observe CCTV footage at their headquarters. I hoped to observe target users in the context of the behavior of interest.</p>
+                                    <p>I prepared observation sheets and recorded user interactions, time of completion, ease of action, and demographic traits. I also drew representations of user journeys on maps to record pain-point locations.</p>
+                                </div>
+                            </div>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/video_observation.jpeg" alt="interview 2" class="rounded-lg shadow-lg w-full h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
+                        <div class="text-content mb-4">
+                            <ul class="list-disc list-inside big-inter-text">
+                                <li>Users tend to check their phones and signage to navigate</li>
+                                <li>Users often struggled and spent extra time in the ticketing area</li>
+                                <li>Most users seeking help from MARTA personnel seem to be using the mobile Breeze QR ticket</li>
+                                <li>Group visitors often struggled with the turnstiles</li>
+                            </ul>
+                        </div>
+                        <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                            <img src="../assets/images/marta/observation_sheets.jpg" alt="observation sheets" class="rounded-lg shadow-lg w-full h-auto max-h-96">
+                            <img src="../assets/images/marta/video_observation2.jpg" alt="observation map" class="rounded-lg shadow-lg w-full h-auto max-h-96">
                         </div>
                     </div>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/observation.jpg" alt="phase 1 observation" class="rounded-lg shadow-lg w-full h-auto">
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="w-full">
+                </section>
+
+                <!-- Personas and Journey Maps -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="text-content">
+                                <h2 class="text-4xl font-bold text-blue-400 mb-4">Personas and Journey Maps</h2>
+                                <p class="mb-4">From our user needs research, I visualized our potential users and their needs, expectations, and goals.</p>
+                            </div>
+                        </div>
                         <div class="flex flex-col md:flex-row gap-5">
                             <div class="w-full md:w-1/2">
-                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">Phase 1</h2>
-                                <div class="text-content mb-4">
-                                    <p>In phase 1, our team took observational notes travelling to the Mercedes-Benz stadium during a soccer match, taking notes on features and behaviors.</p>
-                                </div>
-                                <div class="image-content flex justify-center items-center mb-4">
-                                    <img src="../assets/images/marta/observation4.jpg" alt="phase 1 observation" class="rounded-lg shadow-lg w-full h-auto">
+                                <h2 class="text-3xl font-bold text-orange-400 mb-4">Michael (Local)</h2>
+                                <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
+                                    <img src="../assets/images/marta/persona1.jpg" alt="Persona 1" class="rounded-lg shadow-lg w-full h-auto">
+                                    <img src="../assets/images/marta/journey1.jpg" alt="Journey Map 1" class="rounded-lg shadow-lg w-full h-auto">
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 ">
-                                <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">Phase 2</h2>
-                                <div class="text-content mb-4">
-                                    <p>In phase 2, each team member followed specific people on their transit journey, such as groups and foreign riders.</p>
-                                </div>
-                                <div class="image-content flex justify-center items-center mb-4">
-                                    <img src="../assets/images/marta/observation3.jpg" alt="phase 2 observation" class="rounded-lg shadow-lg w-full h-auto">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
-                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
-                    <p class="mb-4">Notes for both phases were recorded in observational charts in Figma to best analyze the results. From the analysis I found:</p>
-                </div>
-                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
-
-                    <!-- Card 1: Most important transit app features -->
-                    <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
-                            Group Travellers
-                        </h2>
-                        <ul class="space-y-2 big-inter-text">
-                            <li><span class="font-medium">Struggled to scan QR tickets</span></li>
-                            <li><span class="font-medium">Relied on group members to make decisions</span></li>
-                            <li><span class="font-medium">More delays at turnstile gates</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 2: Transit alternatives chosen because -->
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-400 mb-4">
-                            Transit alternatives chosen because
-                        </h2>
-                        <ul class="space-y-2 big-inter-text">
-                            <li><span class="font-medium">Hesitated or showed confusion about directions</span></li>
-                            <li><span class="font-medium">Frequently used phone for directions</span></li>
-                            <li><span class="font-medium">Moved quickly through gates</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Video Observations -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Video Observations</h3>
-                        <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Method Details</h4>
-                        <div class="text-content">
-                            <p class="mb-4">Our team got permission from MARTA to observe CCTV footage at their headquarters. I hoped to observe target users in the context of the behavior of interest.</p>
-                            <p>I prepared observation sheets and recorded user interactions, time of completion, ease of action, and demographic traits. I also drew representations of user journeys on maps to record pain-point locations.</p>
-                        </div>
-                    </div>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/video_observation.jpeg" alt="interview 2" class="rounded-lg shadow-lg w-full h-auto">
-                    </div>
-                </div>
-                <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Key Findings</h4>
-                <div class="text-content mb-4">
-                    <ul class="list-disc list-inside big-inter-text">
-                        <li>Users tend to check their phones and signage to navigate</li>
-                        <li>Users often struggled and spent extra time in the ticketing area</li>
-                        <li>Most users seeking help from MARTA personnel seem to be using the mobile Breeze QR ticket</li>
-                        <li>Group visitors often struggled with the turnstiles</li>
-                    </ul>
-                </div>
-                <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                    <img src="../assets/images/marta/observation_sheets.jpg" alt="observation sheets" class="rounded-lg shadow-lg w-full h-auto max-h-96">
-                    <img src="../assets/images/marta/video_observation2.jpg" alt="observation map" class="rounded-lg shadow-lg w-full h-auto max-h-96">
-                </div>
-            </div>
-        </section>
-
-        <!-- Personas and Journey Maps -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="text-content">
-                        <h2 class="text-4xl font-bold text-blue-400 mb-4">Personas and Journey Maps</h2>
-                        <p class="mb-4">From our user needs research, I visualized our potential users and their needs, expectations, and goals.</p>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row gap-5">
-                    <div class="w-full md:w-1/2">
-                        <h2 class="text-3xl font-bold text-orange-400 mb-4">Michael (Local)</h2>
-                        <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
-                            <img src="../assets/images/marta/persona1.jpg" alt="Persona 1" class="rounded-lg shadow-lg w-full h-auto">
-                            <img src="../assets/images/marta/journey1.jpg" alt="Journey Map 1" class="rounded-lg shadow-lg w-full h-auto">
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/2 ">
-                        <h2 class="text-3xl font-bold text-orange-400 mb-4">Ana (Visitor)</h2>
-                        <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
-                            <img src="../assets/images/marta/persona2.jpg" alt="Persona 2" class="rounded-lg shadow-lg w-full h-auto">
-                            <img src="../assets/images/marta/journey2.jpg" alt="Journey Map 2" class="rounded-lg shadow-lg w-full h-auto">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-      
-        <!-- Design Implications & Ideation -->
-        <div class="flex flex-col md:flex-row gap-8">
-            <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-                <div class="text-content">
-                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Design Implications</h2>
-                    <p class="mb-4">From our user research and visualizations, I determined several design implications intended to support and incentivize MARTA use:</p>
-                    <ol class="big-inter-text mb-4 list-decimal pl-5 space-y-2">
-                            <li>Include relevant, exciting, and interactive elements to encourage users to use MARTA during the World Cup</li>
-                            <li>Provide users with real-time updates and service reports</li>
-                            <li>Allow users to easily plan their trips from multiple locations and include not just MARTA routes</li>
-                            <li>Allow users to contact or communicate with MARTA staff for assistance</li>
-                            <li>Streamline the purchasing and use of MARTA's ticketing system for physical and digital tickets</li>
-                            <li>Include features to enable social connection and share trip details</li>
-                            <li>Encompass many features in a single, comprehensive system</li>
-                            <li>Clearly and intuitively guide users through stations and to exits and entrances</li>
-                        </ol>
-                </div>
-            </section>
-
-            <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-                <div class="text-content">
-                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Ideation</h2>
-                    <p class="mb-4">Based on our design implications, our team came up with 10 ideas each and wrote them down.</p>
-                    <img src="../assets/images/marta/idea_text.jpg" alt="Ideation ideas" class="rounded-lg shadow-lg w-full h-auto mb-4">
-                    <p class="mb-4">We then participated in crazy eights, sketching 8 ideas each. We grouped these ideas together by similarity.</p>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/idea_sketch.jpg" alt="idea sketches" class="rounded-lg shadow-lg w-full object-cover">
-                        <img src="../assets/images/marta/idea_organize.jpg" alt="organized ideas" class="rounded-lg shadow-lg w-full object-cover">
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Sketches -->
-        <section class="content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="text-content">
-                        <h2 class="text-4xl font-bold text-blue-400 mb-4">Sketches</h2>
-                        <p class="mb-4">After our brainstorming session, I created various sketches in Figma and evaluated them.</p>
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Sketches</h3>
-                        <div class="flex flex-wrap justify-center gap-10 w-full mb-4 image-content"> 
-                            <div class="flex flex-col items-center">
-                                <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Live-Tracking</h4>
-                                <img src="../assets/images/marta/sketch_home.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
-                            </div>
-
-                            <div class="flex flex-col items-center">
-                                <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Trip Planning</h4>
-                                <img src="../assets/images/marta/sketch_trip.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
-                            </div>
-                            
-                            <div class="flex flex-col items-center">
-                                <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Navigation</h4>
-                                <img src="../assets/images/marta/sketch_nav.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
-                            </div>
-                            
-                            <div class="flex flex-col items-center">
-                                <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Safety and Report</h4>
-                                <img src="../assets/images/marta/sketch_report.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
-                            </div>
-                            
-                            <div class="flex flex-col items-center">
-                                <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Group Features</h4>
-                                <img src="../assets/images/marta/sketch_group.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
-                            </div>
-                        </div>
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Evaluation</h3>
-                        <p class="mb-4">After creating sketches in Figma, I held 2 moderated focus group sessions. During feedback sessions I presented groups with our lo-fidelity sketches and discussed functionality, intuitiveness, and accessibility.</p>
-                        <div class="flex flex-col md:flex-row gap-5 mb-4">
-                            <div class="w-full md:w-1/2">
-                                <h2 class="text-2xl font-bold text-yellow-500 mb-4">Focus Group 1</h2>
-                                <p class="mb-4">The first focus group, held on Google Meet, included 4 members from the Rider Advisory Council (RAC) and MARTA Accessibility Committee (MAC) to gather feedback from MARTA riders and potential users.</p>
+                                <h2 class="text-3xl font-bold text-orange-400 mb-4">Ana (Visitor)</h2>
                                 <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
-                                    <img src="../assets/images/marta/sketch_fg1.png" alt="Sketch focus group online" class="rounded-lg shadow-lg w-full h-auto">
-                                </div>
-                            </div>
-                            <div class="w-full md:w-1/2 ">
-                                <h2 class="text-2xl font-bold text-yellow-500 mb-4">Focus Group 2</h2>
-                                <p class="mb-4">The second focus group was held a MARTA's HQ in Atlanta with 6 experts in customer experience, design, and accessibility. They provided valuable insider perspectives, deepening our understanding of user needs.</p>
-                                <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
-                                    <img src="../assets/images/marta/sketch_fg3.JPG" alt="Sketch focus group in-person" class="rounded-lg shadow-lg w-full h-auto">
+                                    <img src="../assets/images/marta/persona2.jpg" alt="Persona 2" class="rounded-lg shadow-lg w-full h-auto">
+                                    <img src="../assets/images/marta/journey2.jpg" alt="Journey Map 2" class="rounded-lg shadow-lg w-full h-auto">
                                 </div>
                             </div>
                         </div>
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Analysis and Findings</h3>
-                        <p class="mb-4">I analyzed our sketch feedback by organizing our notes on FigJam. Then I organized notes by user, context, and feature discussed. From the sketch evaluation analysis I found that users:</p>
-                        <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
-                            <img src="../assets/images/marta/sketch_analysis.png" alt="idea sketches" class="rounded-lg shadow-lg w-full object-cover">
-                            <img src="../assets/images/marta/sketch_analysis2.png" alt="organized ideas" class="rounded-lg shadow-lg w-full object-cover">
-                        </div>
-                        <p>Overall, the sketch feedback indicated we needed to refocus our design and simplify several features.</p>
-                        <div class="grid grid-cols-[5%_45%_50%] gap-2 p-4 big-inter-text mb-4">
-                            <div class="font-bold p-2 text-center"></div>
-                            <div class="font-bold p-1">Finding</div>
-                            <div class="font-bold p-1">Solution</div>
-                            
-                            <div class="p-1 text-center">1.</div>
-                            <div class="p-1">Enjoyed group planning features, but found them difficult to understand</div>
-                            <div class="p-1">Make the design more intuitive to lower tech savviness requirements</div>
-
-                            <div class="p-1 text-center">2.</div>
-                            <div class="p-1">Report feature is simple, but it may be hard to inform staff our user location</div>
-                            <div class="p-1">Allow users to provide more information about their location</div>
-                            
-                            <div class="p-1 text-center">3.</div>
-                            <div class="p-1">Uncertain about chatbot features</div>
-                            <div class="p-1">Find right use cases for users</div>
-
-                            <div class="p-1 text-center">4.</div>
-                            <div class="p-1">Want to see accessibility information for stations, elevators, and bathrooms</div>
-                            <div class="p-1">Provide information about accessibility for stations</div>
-
-                            <div class="p-1 text-center">5.</div>
-                            <div class="p-1">Desire live information and directions</div>
-                            <div class="p-1">Prioritize life info and navigation</div>
-
-                            <div class="p-1 text-center">6.</div>
-                            <div class="p-1">Forums better elsewhere (Reddit)</div>
-                            <div class="p-1">Remove discussion forums</div>
-
-                            <div class="p-1 text-center">7.</div>
-                            <div class="p-1">Concerns of a FIFA traveler are different from that of everyday rider</div>
-                            <div class="p-1">Further account for World Cup target user group</div>
-
-                            <div class="p-1 text-center">8.</div>
-                            <div class="p-1">High cognitive load of trip planning</div>
-                            <div class="p-1">Prioritize and simplify trip planning</div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Wireframes -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
-                    <div class="w-full md:w-2/3">
-                        <h2 class="text-4xl font-bold text-blue-400 mb-4">Wireframes</h3>
-                        <p class="mb-4">Based on feedback from our sketches, I developed mid-fidelity wireframes to conduct user evaluations. These insights guided the creation of a high-fidelity prototype.</p>
-                        <h4 class="text-3xl font-bold text-orange-400 mt-4 mb-4">Method Details</h4>
-                        <p class="mb-4">To fully evaluate our wireframes, I conducted think-aloud usability tests with 4 non-student participants, selected for their diverse backgrounds, including varying experience with MARTA and international transit systems.</p>
-                        <p class="mb-4">Participants interacted with fully functional phone prototypes designed to emulate the final product. Participants were presented with realistic scenarios reflecting challenges faced by our personas and completed 10 progressively complex tasks.</p>
-                        <h4 class="text-2xl font-bold text-yellow-500 mb-4">Tasks and Questions</h3>
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
-                            <div class="w-full md:w-3/5">
-                                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
-                                    <p class="mb-4">Users were asked to complete tasks such as:</p>
-                                </div>
-                                <div class="text-content mb-4">
-                                    <ul class="list-disc list-inside big-inter-text">
-                                        <li>Save and get directions to a World Cup watch party</li>
-                                        <li>Report an incident that happened on the train</li>
-                                        <li>Share a meeting spot for the Smiths group to meet up</li>
-                                    </ul>
-                                </div>
-                                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
-                                    <p class="mb-4">After each task users would be asked several questions including:</p>
-                                </div>
-                                <div class="text-content mb-4">
-                                    <ul class="list-disc list-inside big-inter-text">
-                                        <li>Evaluate the difficulty of various features</li>
-                                        <li>Identify elements that met or failed to meet expectations</li>
-                                        <li>Express areas where they want to see change</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="w-full md:w-2/5">
-                                <img src="../assets/images/marta/wireframe_interview.png" alt="wireframe interview" class="rounded-lg shadow-lg w-full h-auto max-h-96">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-content w-full md:w-1/3 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/wireframe_demo.gif" alt="wireframe demo gif" class="rounded-lg shadow-lg w-auto" style="max-height: 675px;">
-                    </div>
-                </div>
-                <h4 class="text-3xl font-bold text-orange-400 mb-4">Analysis and Findings</h4>
-                <p class="mb-4">I analyzed our wireframe feedback by organizing our notes in FigJam by task and color-coded them. I then incorporated color-coded arrows into our wireframes to map user actions during tasks. This visual representation enabled our team to pinpoint UI challenges and confusion more effectively.</p>
-                <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
-                    <div class="w-full md:w-1/2 ">
-                        <h4 class="text-2xl font-bold text-yellow-500 mb-4">Findings</h4>
-                        <ol class="big-inter-text mb-4 list-decimal pl-5 space-y-3">
-                            <li>Revisit our language and iconography to make features more intuitive</li>
-                            <li>Promote other ticketing options outside of MARTA (e.g. hotel deals)</li>
-                            <li>Use more universal elements, most users will be new to Atlanta and MARTA</li>
-                            <li>Reanalyze the user flow to reduce the cognitive load users face</li>
-                            <li>Clarify the distinction between emergency and casual reports</li>
-                            <li>Find the right use for the chat bot and allow it to provide more information</li>
-                            <li>Improve UI accessibility to promote foreign languages and accessibility tools</li>
-                            <li>Make service and emergency alerts more pronounced and relevant to users</li>
-                        </ol>
-                    </div>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/wireframeanaylsis.jpg" alt="wireframe analysis" class="rounded-lg shadow-lg w-auto md:w-1/2 max-h-96">
-                        <img src="../assets/images/marta/wireframe_analysis2.png" alt="wireframe analysis 2" class="rounded-lg shadow-lg w-auto md:w-1/2 max-h-96">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Prototypes -->
-        <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="text-content">
-                        <h2 class="text-4xl font-bold text-blue-400 mb-4">Prototype</h2>
-                        <p>Check out the prototype below by using the arrows.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="relative  border border-gray-700 rounded-xl shadow-2xl overflow-hidden w-full ">
+                </section>
             
-                <button id="prev-btn" class="nav-arrow absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-gray-800 text-white z-20 hidden md:block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-                </button>
-                <button id="next-btn" class="nav-arrow absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-gray-800 text-white z-20 hidden md:block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-                </button>
-
-                <div id="carousel" class="carousel-container flex snap-x snap-mandatory transition-transform duration-500 ease-in-out touch-pan-x">
-                    <div class="scroll-item snap-center px-6 py-8">
-                        <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Home Page</h2>
-                        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
-                            
-                            <div class="w-full md:w-1/3 flex justify-center">
-                                <div class="phone-mockup">
-                                    <img src="../assets/images/marta/demo_home.gif" alt="Mocks of home page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
-                                </div>
-                            </div>
-
-                            <div class="w-full md:w-2/3 space-y-6 text-lg">
-                                <h3 class="text-2xl font-bold text-yellow-500">Featured Showcase</h3>
-                                <p>Scroll carousel featured section displaying Atlanta's top attractions and local events at the top of the homepage for easy access to trending topics.</p>
-
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Hot-spots</h3>
-                                <p>Home page highlights key locations relevant to FIFA World Cup travelers. Allows for easy-access to these key locations.</p>
-
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Easy-Access Tabs</h3>
-                                <p>Displays introduction and overview of the application's key functionalities and offers secondary navigation for new users.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="scroll-item snap-center px-6 py-8">
-                        <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Trip Planning</h2>
-                        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
-                
-                            <div class="w-full md:w-1/3 flex justify-center">
-                                <div class="phone-mockup">
-                                    <img src="../assets/images/marta/demo_trip.gif" alt="Mocks of trip planning page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
-                                </div>
-                            </div>
-                    
-                            <div class="w-full md:w-2/3 space-y-6 text-lg">
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Customized Routes</h3>
-                                <p>Filter through and select various means of transit (e.g., walking, Uber, biking) to assist in finding the most efficient transit.</p>
-
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Real-Time Data & Tracking</h3>
-                                <p>View upcoming train arrivals relevant to the user's route.</p>
-
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Live Transit & Station Updates</h3>
-                                <p>View updates on relevant service errors and accessibility concerns along the user's journey to assist in keeping users informed.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                
-                    <div class="scroll-item snap-center px-6 py-8">
-                        <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Alert Page</h2>
-                        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
-                        
-                            <div class="w-full md:w-1/3 flex justify-center">
-                                <div class="phone-mockup">
-                                    <img src="../assets/images/marta/demo_alert.gif" alt="Mocks of alerts page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
-                                </div>
-                            </div>
-                            
-                            <div class="w-full md:w-2/3 space-y-6 text-lg">
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Alerts</h3>
-                                <p>Accesibile on every page, users can filter through and view service and facility alerts. This feature keeps users informed and assists in their trip-planning process.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                
-                    <div class="scroll-item snap-center px-6 py-8">
-                        <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Group Page</h2>
-                        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
-                            
-                            <div class="w-full md:w-1/3 flex justify-center">
-                                <div class="phone-mockup">
-                                    <img src="../assets/images/marta/demo_group.gif" alt="Mocks of group page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
-                                </div>
-                            </div>
-                        
-                            <div class="w-full md:w-2/3 space-y-6 text-lg">
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Live Group Member Locations</h3>
-                                <p>View locations of group members to stay connected while traveling.</p>
-
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Meetup Pins</h3>
-                                <p>Engage in built-in communication for group travel coordination by labeling and dropping pins for synchronized ride exits and meeting points.</p>
-                                
-                                <h3 class="text-2xl font-bold text-yellow-500 mt-4">Dependent Mode</h3>
-                                <p>Make group members 'dependents' to purchase and hold tickets on their behalf. Ideal for young children, elderly and disabled riders.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                
-                <div class="scroll-item snap-center px-6 py-8">
-                    <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Tickets Page</h2>
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
-                        
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="phone-mockup">
-                                <img src="../assets/images/marta/demo_ticket.gif" alt="Mocks of ticket page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
-                            </div>
-                        </div>
-                        
-                        <div class="w-full md:w-2/3 space-y-6 text-lg">
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Easy Access Tickets</h3>
-                            <p>Reload and purchase tickets directly from the ticketing page. Toggle between tickets for easy access to the user's machine-scannable QR code.</p>
-
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Customer Support</h3>
-                            <p>Toggle between users to reload and scan tickets on behalf of dependent group members.</p>
-
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Ticket Bundles</h3>
-                            <p>Streamlined ticket purchasing and ticket management on both local events and MARTA rides.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scroll-item snap-center px-6 py-8">
-                    <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Events Page</h2>
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
-                        
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="phone-mockup">
-                                <img src="../assets/images/marta/demo_event.gif" alt="Mocks of event page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
-                            </div>
-                        </div>
-                        
-                        <div class="w-full md:w-2/3 space-y-6 text-lg">
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Upcoming Games</h3>
-                            <p>Search and view upcoming FIFA World Cup games. Read event descriptions and get directions to their location.</p>
-
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Saved Events</h3>
-                            <p>Save upcoming games and popular events to the saved section of the page. Revisit these saved events at any time and receive directions to their location.</p>
-
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Popular Events</h3>
-                            <p>Browse through FIFA related events. Filter by “pre-game,” “post-game,” and, “all”. Read descriptions and get directions to these events.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scroll-item snap-center px-6 py-8">
-                    <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Report Page</h2>
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
-                        
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="phone-mockup">
-                                <img src="../assets/images/marta/demo_report.gif" alt="Mocks of reports page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
-                            </div>
-                        </div>
-                        
-                        <div class="w-full md:w-2/3 space-y-6 text-lg">
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">SOS Call</h3>
-                            <p>Submit a direct emergency report by calling or texting the MPD.</p>
-
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">Reports</h3>
-                            <p>Filter through various report-types and communicate indirectly with the MPD.</p>
-
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">History</h3>
-                            <p>Look through previous submitted reports and track status updates on their progress.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scroll-item snap-center px-6 py-8">
-                    <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Chatbot</h2>
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
-                        
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="phone-mockup">
-                                <img src="../assets/images/marta/demo_chatbot.gif" alt="Mocks of chatbot page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
-                            </div>
-                        </div>
-                        
-                        <div class="w-full md:w-2/3 space-y-6 text-lg">
-                            <h3 class="text-2xl font-bold text-yellow-500 mt-4">MARTA Support</h3>
-                            <p>Interact with MARTA's “MARTABOT”, an AI assistant designed for timely and reliable support.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Evaluations -->
-        <section class="content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-            <div class="text-content">
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="text-content">
-                        <h2 class="text-4xl font-bold text-blue-400 mb-4">Evaluations</h2>
-                        <p class="mb-4">The final step of our four-month MARTA research and design project involved evaluating our high-fidelity prototypes.</p>
-                        <h3 class="text-3xl font-bold text-orange-400 mb-4">Overview</h3>
-                        <div class="w-full p-4 big-inter-text mb-4">
-                            <!-- Header Row -->
-                            <div class="hidden md:grid md:grid-cols-[20%_40%_40%] gap-2 mb-2">
-                                <div></div>
-                                <div class="font-bold p-1">Participants</div>
-                                <div class="font-bold p-1">Method</div>
-                            </div>
-
-                            <!-- Data Rows -->
-                            <div class="space-y-6">
-                                <!-- Heuristic Evaluation -->
-                                <div class="grid grid-cols-1 md:grid-cols-[20%_40%_40%] gap-2">
-                                <div class="p-1 font-bold">Heuristic Evaluation</div>
-                                <div class="p-1">5 user experience and customer experience experts</div>
-                                <div class="p-1">Experts completed heuristic evaluations, rating features based on heuristics</div>
-                                </div>
-
-                                <!-- Usability Test -->
-                                <div class="grid grid-cols-1 md:grid-cols-[20%_40%_40%] gap-2">
-                                <div class="p-1 font-bold">Usability Test</div>
-                                <div class="p-1">5 potential users that are MARTA users or are World Cup fans</div>
-                                <div class="p-1">Users carried out a set of 8 tasks while being asked to think out loud</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </section>
-        <div class="flex flex-col md:flex-row gap-8">
-            <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-                <div class="text-content">
-                    <h3 class="text-3xl font-bold text-orange-400 mb-4">Heuristic Evaluation</h3>
-                    <p class="mb-4">To evaluate our prototype, I had MARTA UX experts evaluate parts of our design based on a mix of Nielsen and Shneiderman's heuristics. Participants rated each page on a scale of 0-4 and gave explanations.</p>
-                    <img src="../assets/images/marta/heuristic_eval.JPG" alt="Heuristic Eval Sheet" class="rounded-lg shadow-lg w-full h-auto mb-4">
-                    
-                    <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Participants</h4>
-                    <p class="mb-4">Participants included 4 MARTA UX and customer experience experts and 1 Georgia Tech HCI UX expert.</p>
-                    <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
-                        <img src="../assets/images/marta/prototype_eval1.JPG" alt="prototype evaluation 1" class="rounded-lg shadow-lg w-full object-cover">
-                        <img src="../assets/images/marta/prototype_eval2.JPG" alt="prototype evaluation 2" class="rounded-lg shadow-lg w-full object-cover">
-                    </div>
-
-                    <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Analysis</h4>
-                    <p class="mb-4">To analyze our findings, I organized expert notes by task and visualized problem areas by layering the notes directly onto the prototype.</p>
-                    <div class="image-content w-full md:w-2/3 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
-                        <img src="../assets/images/marta/heuristic_analysis.JPG" alt="heuristic analysis 1" class="rounded-lg shadow-lg w-full object-cover">
-                    </div>
-                    <p class="mb-4">I also visualized heuristic severity ratings in Excel to calculate evaluation statistics.</p>
-                    <div class="image-content w-full md:w-2/3 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
-                        <img src="../assets/images/marta/heuristic_eval2.JPG" alt="heuristic analysis 2" class="rounded-lg shadow-lg w-full object-cover">
-                    </div>
-
-                    <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Findings</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Group Ticketing</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>The ticketing group toggle's purpose is unclear and confusing</li>
-                                <li>Feedback for making group members dependents is not clear</li>
-                                <li>Ticket bundles current placement is difficult to find</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Alerts & Notifications</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Users expected to find notifications under the bell icon</li>
-                                <li>Lack of alert personalization or filtering is frustrating</li>
-                                <li>Navigation announcement unclear and confusing purpose</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Navigation & Layout</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Image banner is too large, hard to read, and looks like an ad</li>
-                                <li>Scrolling functionality in trip planning is not obvious</li>
-                                <li>The MARTA chat bot button covers important text, frustrating</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Clarity & Usability</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Users confused by unclear terms like “best route”</li>
-                                <li>Key features (e.g., walking options) are hidden in dropdowns</li>
-                                <li>Event table is confusing, users don't recognize clickable items</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
-                <div class="text-content">
-                    <h3 class="text-3xl font-bold text-orange-400 mb-4">Usability Test</h3>
-                    <p class="mb-4">In our final test, users interacted with our prototype to complete tasks and provide feedback. Follow-up questions were then used to evaluate usability and gather additional insights.</p>
-                    <img src="../assets/images/marta/usability-testing.jpg" alt="Usability testing" class="rounded-lg shadow-lg w-full h-auto mb-4">
-                    
-                    <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Participants</h4>
-                    <p class="mb-4">Participants were collected from MARTA and program connections. Participants ranged from 21 to 51 years old and all claimed to be "interested" or "likely" to attend the World Cup.</p>
-                    <img src="../assets/images/marta/usability_test.JPG" alt="Usability test participants" class="rounded-lg shadow-lg w-full h-auto mb-4">
-
-                    <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Analysis</h4>
-                    <p class="mb-4">During interviews, we had dedicated note takers who recorded all reactions and interactions. I built affinity maps based on the categories to best evaluate feedback.</p>
-                    <div class="image-content w-full  flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
-                        <img src="../assets/images/marta/usability_test_analysis.JPG" alt="Usability test analysis 1" class="rounded-lg shadow-lg w-full object-cover">
-                    </div>
-                    <p class="mb-4">Additionally, I collected metrics through video recordings such as # of clicks, # of errors, and time of completion between users.</p>
-                    <div class="image-content w-full  flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
-                        <img src="../assets/images/marta/usability_test_analysis2.JPG" alt="Usability test analysis 2" class="rounded-lg shadow-lg w-full object-cover">
-                    </div>
-
-                    <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Findings</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Visual Design</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Unclear iconography and button design</li>
-                                <li>Misinterpretation of design elements</li>
-                                <li>Misaligned visual hierarchy and UX writing</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Accessibility & Usability</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Unclear app navigation leading difficulty in locating app functions</li>
-                                <li>Lack of intuitive information structure and feature location</li>
-                                <li>Concern for unintended interactions</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Information Architecture</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Misplaced features</li>
-                                <li>Navigation challenges</li>
-                                <li>Content organization for clarity and consistency</li>
-                            </ul>
-                        </div>
-
-                        <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
-                            <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">User Perception</h2>
-                            <ul class="space-y-2 text-lg list-disc list-inside">
-                                <li>Unclear user understanding and clarity</li>
-                                <li>Customization and preferences needs</li>
-                                <li>Unclear purpose of dependency for group members</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Impact and Reflection Section -->
-       <section class="content-card">
-           <div class="text-content">
-               <h2 class="text-4xl font-bold text-blue-400 mb-4">Impact and Reflection</h2>
-               <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Next Steps</h3>
-               <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0 items-stretch mb-8">
-
-                    <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Implement</h2>
-                        <ul class="space-y-2 text-lg list-disc list-inside">
-                            <li>More intuitive diction</li>
-                            <li>Refined iconography</li>
-                            <li>Reorganization of information hierarchy</li>
-                        </ul>
-                    </div>
-
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Introduce</h2>
-                        <ul class="space-y-2  text-lg list-disc list-inside">
-                            <li>Onboarding tutorials</li>
-                            <li>Better visual hierarchy</li>
-                            <li>Customization tools</li>
-                        </ul>
-                    </div>
-
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Eliminate</h2>
-                        <ul class="space-y-2 text-lg list-disc list-inside">
-                            <li>Ad-like imagery</li>
-                            <li>MARTA jargon</li>
-                            <li>Overcomplicated functions</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Results</h3>
+                <!-- Design Implications & Ideation -->
+                <div class="flex flex-col md:flex-row gap-8">
+                    <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
                         <div class="text-content">
-                            <p class="mb-4">In December 2024, we presented our research and design process to our professors and 3 representatives from MARTA.</p>
-                            <p>As MARTA moves towards the unified app design and prepares for the World Cup, I hope they will utilize our research and designs to further guide development.</p>
+                            <h2 class="text-4xl font-bold text-blue-400 mb-4">Design Implications</h2>
+                            <p class="mb-4">From our user research and visualizations, I determined several design implications intended to support and incentivize MARTA use:</p>
+                            <ol class="big-inter-text mb-4 list-decimal pl-5 space-y-2">
+                                    <li>Include relevant, exciting, and interactive elements to encourage users to use MARTA during the World Cup</li>
+                                    <li>Provide users with real-time updates and service reports</li>
+                                    <li>Allow users to easily plan their trips from multiple locations and include not just MARTA routes</li>
+                                    <li>Allow users to contact or communicate with MARTA staff for assistance</li>
+                                    <li>Streamline the purchasing and use of MARTA's ticketing system for physical and digital tickets</li>
+                                    <li>Include features to enable social connection and share trip details</li>
+                                    <li>Encompass many features in a single, comprehensive system</li>
+                                    <li>Clearly and intuitively guide users through stations and to exits and entrances</li>
+                                </ol>
                         </div>
-                        
-                    </div>
-                    <div class="image-content w-full md:w-3/4 flex flex-col md:flex-row justify-center items-center mx-auto gap-5">
-    
-                        <div class="w-full aspect-w-16 aspect-h-9">
-                            <iframe 
-                                src="https://www.youtube-nocookie.com/embed/Jkp7WVDfzRY?si=Uia4HqgfatObj9c-" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen
-                            ></iframe>
+                    </section>
+
+                    <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                        <div class="text-content">
+                            <h2 class="text-4xl font-bold text-blue-400 mb-4">Ideation</h2>
+                            <p class="mb-4">Based on our design implications, our team came up with 10 ideas each and wrote them down.</p>
+                            <img src="../assets/images/marta/idea_text.jpg" alt="Ideation ideas" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                            <p class="mb-4">We then participated in crazy eights, sketching 8 ideas each. We grouped these ideas together by similarity.</p>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/idea_sketch.jpg" alt="idea sketches" class="rounded-lg shadow-lg w-full object-cover">
+                                <img src="../assets/images/marta/idea_organize.jpg" alt="organized ideas" class="rounded-lg shadow-lg w-full object-cover">
                             </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sketches -->
+                <section class="content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="text-content">
+                                <h2 class="text-4xl font-bold text-blue-400 mb-4">Sketches</h2>
+                                <p class="mb-4">After our brainstorming session, I created various sketches in Figma and evaluated them.</p>
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Sketches</h3>
+                                <div class="flex flex-wrap justify-center gap-10 w-full mb-4 image-content"> 
+                                    <div class="flex flex-col items-center">
+                                        <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Live-Tracking</h4>
+                                        <img src="../assets/images/marta/sketch_home.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
+                                    </div>
+
+                                    <div class="flex flex-col items-center">
+                                        <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Trip Planning</h4>
+                                        <img src="../assets/images/marta/sketch_trip.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col items-center">
+                                        <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Navigation</h4>
+                                        <img src="../assets/images/marta/sketch_nav.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col items-center">
+                                        <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Safety and Report</h4>
+                                        <img src="../assets/images/marta/sketch_report.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col items-center">
+                                        <h4 class="text-2xl font-semibold text-yellow-500 mt-2 mb-4 text-center truncate w-full">Group Features</h4>
+                                        <img src="../assets/images/marta/sketch_group.png" class="rounded-lg shadow-lg max-h-80 w-full object-cover">
+                                    </div>
+                                </div>
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Evaluation</h3>
+                                <p class="mb-4">After creating sketches in Figma, I held 2 moderated focus group sessions. During feedback sessions I presented groups with our lo-fidelity sketches and discussed functionality, intuitiveness, and accessibility.</p>
+                                <div class="flex flex-col md:flex-row gap-5 mb-4">
+                                    <div class="w-full md:w-1/2">
+                                        <h2 class="text-2xl font-bold text-yellow-500 mb-4">Focus Group 1</h2>
+                                        <p class="mb-4">The first focus group, held on Google Meet, included 4 members from the Rider Advisory Council (RAC) and MARTA Accessibility Committee (MAC) to gather feedback from MARTA riders and potential users.</p>
+                                        <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
+                                            <img src="../assets/images/marta/sketch_fg1.png" alt="Sketch focus group online" class="rounded-lg shadow-lg w-full h-auto">
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 ">
+                                        <h2 class="text-2xl font-bold text-yellow-500 mb-4">Focus Group 2</h2>
+                                        <p class="mb-4">The second focus group was held a MARTA's HQ in Atlanta with 6 experts in customer experience, design, and accessibility. They provided valuable insider perspectives, deepening our understanding of user needs.</p>
+                                        <div class="image-content w-full flex flex-col justify-center mt-8 gap-5">
+                                            <img src="../assets/images/marta/sketch_fg3.JPG" alt="Sketch focus group in-person" class="rounded-lg shadow-lg w-full h-auto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Analysis and Findings</h3>
+                                <p class="mb-4">I analyzed our sketch feedback by organizing our notes on FigJam. Then I organized notes by user, context, and feature discussed. From the sketch evaluation analysis I found that users:</p>
+                                <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
+                                    <img src="../assets/images/marta/sketch_analysis.png" alt="idea sketches" class="rounded-lg shadow-lg w-full object-cover">
+                                    <img src="../assets/images/marta/sketch_analysis2.png" alt="organized ideas" class="rounded-lg shadow-lg w-full object-cover">
+                                </div>
+                                <p>Overall, the sketch feedback indicated we needed to refocus our design and simplify several features.</p>
+                                <div class="grid grid-cols-[5%_45%_50%] gap-2 p-4 big-inter-text mb-4">
+                                    <div class="font-bold p-2 text-center"></div>
+                                    <div class="font-bold p-1">Finding</div>
+                                    <div class="font-bold p-1">Solution</div>
+                                    
+                                    <div class="p-1 text-center">1.</div>
+                                    <div class="p-1">Enjoyed group planning features, but found them difficult to understand</div>
+                                    <div class="p-1">Make the design more intuitive to lower tech savviness requirements</div>
+
+                                    <div class="p-1 text-center">2.</div>
+                                    <div class="p-1">Report feature is simple, but it may be hard to inform staff our user location</div>
+                                    <div class="p-1">Allow users to provide more information about their location</div>
+                                    
+                                    <div class="p-1 text-center">3.</div>
+                                    <div class="p-1">Uncertain about chatbot features</div>
+                                    <div class="p-1">Find right use cases for users</div>
+
+                                    <div class="p-1 text-center">4.</div>
+                                    <div class="p-1">Want to see accessibility information for stations, elevators, and bathrooms</div>
+                                    <div class="p-1">Provide information about accessibility for stations</div>
+
+                                    <div class="p-1 text-center">5.</div>
+                                    <div class="p-1">Desire live information and directions</div>
+                                    <div class="p-1">Prioritize life info and navigation</div>
+
+                                    <div class="p-1 text-center">6.</div>
+                                    <div class="p-1">Forums better elsewhere (Reddit)</div>
+                                    <div class="p-1">Remove discussion forums</div>
+
+                                    <div class="p-1 text-center">7.</div>
+                                    <div class="p-1">Concerns of a FIFA traveler are different from that of everyday rider</div>
+                                    <div class="p-1">Further account for World Cup target user group</div>
+
+                                    <div class="p-1 text-center">8.</div>
+                                    <div class="p-1">High cognitive load of trip planning</div>
+                                    <div class="p-1">Prioritize and simplify trip planning</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wireframes -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
+                            <div class="w-full md:w-2/3">
+                                <h2 class="text-4xl font-bold text-blue-400 mb-4">Wireframes</h3>
+                                <p class="mb-4">Based on feedback from our sketches, I developed mid-fidelity wireframes to conduct user evaluations. These insights guided the creation of a high-fidelity prototype.</p>
+                                <h4 class="text-3xl font-bold text-orange-400 mt-4 mb-4">Method Details</h4>
+                                <p class="mb-4">To fully evaluate our wireframes, I conducted think-aloud usability tests with 4 non-student participants, selected for their diverse backgrounds, including varying experience with MARTA and international transit systems.</p>
+                                <p class="mb-4">Participants interacted with fully functional phone prototypes designed to emulate the final product. Participants were presented with realistic scenarios reflecting challenges faced by our personas and completed 10 progressively complex tasks.</p>
+                                <h4 class="text-2xl font-bold text-yellow-500 mb-4">Tasks and Questions</h3>
+                                <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
+                                    <div class="w-full md:w-3/5">
+                                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
+                                            <p class="mb-4">Users were asked to complete tasks such as:</p>
+                                        </div>
+                                        <div class="text-content mb-4">
+                                            <ul class="list-disc list-inside big-inter-text">
+                                                <li>Save and get directions to a World Cup watch party</li>
+                                                <li>Report an incident that happened on the train</li>
+                                                <li>Share a meeting spot for the Smiths group to meet up</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-6 lg:space-y-0 items-stretch">
+                                            <p class="mb-4">After each task users would be asked several questions including:</p>
+                                        </div>
+                                        <div class="text-content mb-4">
+                                            <ul class="list-disc list-inside big-inter-text">
+                                                <li>Evaluate the difficulty of various features</li>
+                                                <li>Identify elements that met or failed to meet expectations</li>
+                                                <li>Express areas where they want to see change</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-2/5">
+                                        <img src="../assets/images/marta/wireframe_interview.png" alt="wireframe interview" class="rounded-lg shadow-lg w-full h-auto max-h-96">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-content w-full md:w-1/3 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/wireframe_demo.gif" alt="wireframe demo gif" class="rounded-lg shadow-lg w-auto" style="max-height: 675px;">
+                            </div>
+                        </div>
+                        <h4 class="text-3xl font-bold text-orange-400 mb-4">Analysis and Findings</h4>
+                        <p class="mb-4">I analyzed our wireframe feedback by organizing our notes in FigJam by task and color-coded them. I then incorporated color-coded arrows into our wireframes to map user actions during tasks. This visual representation enabled our team to pinpoint UI challenges and confusion more effectively.</p>
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-4">
+                            <div class="w-full md:w-1/2 ">
+                                <h4 class="text-2xl font-bold text-yellow-500 mb-4">Findings</h4>
+                                <ol class="big-inter-text mb-4 list-decimal pl-5 space-y-3">
+                                    <li>Revisit our language and iconography to make features more intuitive</li>
+                                    <li>Promote other ticketing options outside of MARTA (e.g. hotel deals)</li>
+                                    <li>Use more universal elements, most users will be new to Atlanta and MARTA</li>
+                                    <li>Reanalyze the user flow to reduce the cognitive load users face</li>
+                                    <li>Clarify the distinction between emergency and casual reports</li>
+                                    <li>Find the right use for the chat bot and allow it to provide more information</li>
+                                    <li>Improve UI accessibility to promote foreign languages and accessibility tools</li>
+                                    <li>Make service and emergency alerts more pronounced and relevant to users</li>
+                                </ol>
+                            </div>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/wireframeanaylsis.jpg" alt="wireframe analysis" class="rounded-lg shadow-lg w-auto md:w-1/2 max-h-96">
+                                <img src="../assets/images/marta/wireframe_analysis2.png" alt="wireframe analysis 2" class="rounded-lg shadow-lg w-auto md:w-1/2 max-h-96">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Prototypes -->
+                <section class="w-full content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="text-content">
+                                <h2 class="text-4xl font-bold text-blue-400 mb-4">Prototype</h2>
+                                <p>Check out the prototype below by using the arrows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative  border border-gray-700 rounded-xl shadow-2xl overflow-hidden w-full ">
+                    
+                        <button id="prev-btn" class="nav-arrow absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-gray-800 text-white z-20 hidden md:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                        </button>
+                        <button id="next-btn" class="nav-arrow absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-gray-800 text-white z-20 hidden md:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+
+                        <div id="carousel" class="carousel-container flex snap-x snap-mandatory transition-transform duration-500 ease-in-out touch-pan-x">
+                            <div class="scroll-item snap-center px-6 py-8">
+                                <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Home Page</h2>
+                                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
+                                    
+                                    <div class="w-full md:w-1/3 flex justify-center">
+                                        <div class="phone-mockup">
+                                            <img src="../assets/images/marta/demo_home.gif" alt="Mocks of home page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                        <h3 class="text-2xl font-bold text-yellow-500">Featured Showcase</h3>
+                                        <p>Scroll carousel featured section displaying Atlanta's top attractions and local events at the top of the homepage for easy access to trending topics.</p>
+
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Hot-spots</h3>
+                                        <p>Home page highlights key locations relevant to FIFA World Cup travelers. Allows for easy-access to these key locations.</p>
+
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Easy-Access Tabs</h3>
+                                        <p>Displays introduction and overview of the application's key functionalities and offers secondary navigation for new users.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="scroll-item snap-center px-6 py-8">
+                                <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Trip Planning</h2>
+                                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
                         
+                                    <div class="w-full md:w-1/3 flex justify-center">
+                                        <div class="phone-mockup">
+                                            <img src="../assets/images/marta/demo_trip.gif" alt="Mocks of trip planning page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Customized Routes</h3>
+                                        <p>Filter through and select various means of transit (e.g., walking, Uber, biking) to assist in finding the most efficient transit.</p>
+
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Real-Time Data & Tracking</h3>
+                                        <p>View upcoming train arrivals relevant to the user's route.</p>
+
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Live Transit & Station Updates</h3>
+                                        <p>View updates on relevant service errors and accessibility concerns along the user's journey to assist in keeping users informed.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                            <div class="scroll-item snap-center px-6 py-8">
+                                <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Alert Page</h2>
+                                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
+                                
+                                    <div class="w-full md:w-1/3 flex justify-center">
+                                        <div class="phone-mockup">
+                                            <img src="../assets/images/marta/demo_alert.gif" alt="Mocks of alerts page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Alerts</h3>
+                                        <p>Accesibile on every page, users can filter through and view service and facility alerts. This feature keeps users informed and assists in their trip-planning process.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                            <div class="scroll-item snap-center px-6 py-8">
+                                <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Group Page</h2>
+                                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10">
+                                    
+                                    <div class="w-full md:w-1/3 flex justify-center">
+                                        <div class="phone-mockup">
+                                            <img src="../assets/images/marta/demo_group.gif" alt="Mocks of group page" class="w-full h-full object-cover rounded-3xl p-3" style="max-height: 600px;  border-radius: 55px;">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Live Group Member Locations</h3>
+                                        <p>View locations of group members to stay connected while traveling.</p>
+
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Meetup Pins</h3>
+                                        <p>Engage in built-in communication for group travel coordination by labeling and dropping pins for synchronized ride exits and meeting points.</p>
+                                        
+                                        <h3 class="text-2xl font-bold text-yellow-500 mt-4">Dependent Mode</h3>
+                                        <p>Make group members 'dependents' to purchase and hold tickets on their behalf. Ideal for young children, elderly and disabled riders.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                        <div class="scroll-item snap-center px-6 py-8">
+                            <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Tickets Page</h2>
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
+                                
+                                <div class="w-full md:w-1/3 flex justify-center">
+                                    <div class="phone-mockup">
+                                        <img src="../assets/images/marta/demo_ticket.gif" alt="Mocks of ticket page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Easy Access Tickets</h3>
+                                    <p>Reload and purchase tickets directly from the ticketing page. Toggle between tickets for easy access to the user's machine-scannable QR code.</p>
+
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Customer Support</h3>
+                                    <p>Toggle between users to reload and scan tickets on behalf of dependent group members.</p>
+
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Ticket Bundles</h3>
+                                    <p>Streamlined ticket purchasing and ticket management on both local events and MARTA rides.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item snap-center px-6 py-8">
+                            <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Events Page</h2>
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
+                                
+                                <div class="w-full md:w-1/3 flex justify-center">
+                                    <div class="phone-mockup">
+                                        <img src="../assets/images/marta/demo_event.gif" alt="Mocks of event page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Upcoming Games</h3>
+                                    <p>Search and view upcoming FIFA World Cup games. Read event descriptions and get directions to their location.</p>
+
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Saved Events</h3>
+                                    <p>Save upcoming games and popular events to the saved section of the page. Revisit these saved events at any time and receive directions to their location.</p>
+
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Popular Events</h3>
+                                    <p>Browse through FIFA related events. Filter by “pre-game,” “post-game,” and, “all”. Read descriptions and get directions to these events.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item snap-center px-6 py-8">
+                            <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Report Page</h2>
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
+                                
+                                <div class="w-full md:w-1/3 flex justify-center">
+                                    <div class="phone-mockup">
+                                        <img src="../assets/images/marta/demo_report.gif" alt="Mocks of reports page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">SOS Call</h3>
+                                    <p>Submit a direct emergency report by calling or texting the MPD.</p>
+
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">Reports</h3>
+                                    <p>Filter through various report-types and communicate indirectly with the MPD.</p>
+
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">History</h3>
+                                    <p>Look through previous submitted reports and track status updates on their progress.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item snap-center px-6 py-8">
+                            <h2 class="text-3xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Chatbot</h2>
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 px-10" style="max-height: 600px;  border-radius: 55px;">
+                                
+                                <div class="w-full md:w-1/3 flex justify-center">
+                                    <div class="phone-mockup">
+                                        <img src="../assets/images/marta/demo_chatbot.gif" alt="Mocks of chatbot page" class="w-full h-full object-cover rounded-3xl p-3"  style="max-height: 600px;  border-radius: 55px;">
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full md:w-2/3 space-y-6 text-lg">
+                                    <h3 class="text-2xl font-bold text-yellow-500 mt-4">MARTA Support</h3>
+                                    <p>Interact with MARTA's “MARTABOT”, an AI assistant designed for timely and reliable support.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </section>
+
+                <!-- Evaluations -->
+                <section class="content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="text-content">
+                                <h2 class="text-4xl font-bold text-blue-400 mb-4">Evaluations</h2>
+                                <p class="mb-4">The final step of our four-month MARTA research and design project involved evaluating our high-fidelity prototypes.</p>
+                                <h3 class="text-3xl font-bold text-orange-400 mb-4">Overview</h3>
+                                <div class="w-full p-4 big-inter-text mb-4">
+                                    <!-- Header Row -->
+                                    <div class="hidden md:grid md:grid-cols-[20%_40%_40%] gap-2 mb-2">
+                                        <div></div>
+                                        <div class="font-bold p-1">Participants</div>
+                                        <div class="font-bold p-1">Method</div>
+                                    </div>
+
+                                    <!-- Data Rows -->
+                                    <div class="space-y-6">
+                                        <!-- Heuristic Evaluation -->
+                                        <div class="grid grid-cols-1 md:grid-cols-[20%_40%_40%] gap-2">
+                                        <div class="p-1 font-bold">Heuristic Evaluation</div>
+                                        <div class="p-1">5 user experience and customer experience experts</div>
+                                        <div class="p-1">Experts completed heuristic evaluations, rating features based on heuristics</div>
+                                        </div>
+
+                                        <!-- Usability Test -->
+                                        <div class="grid grid-cols-1 md:grid-cols-[20%_40%_40%] gap-2">
+                                        <div class="p-1 font-bold">Usability Test</div>
+                                        <div class="p-1">5 potential users that are MARTA users or are World Cup fans</div>
+                                        <div class="p-1">Users carried out a set of 8 tasks while being asked to think out loud</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                        <div class="text-content">
+                            <h3 class="text-3xl font-bold text-orange-400 mb-4">Heuristic Evaluation</h3>
+                            <p class="mb-4">To evaluate our prototype, I had MARTA UX experts evaluate parts of our design based on a mix of Nielsen and Shneiderman's heuristics. Participants rated each page on a scale of 0-4 and gave explanations.</p>
+                            <img src="../assets/images/marta/heuristic_eval.JPG" alt="Heuristic Eval Sheet" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                            
+                            <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Participants</h4>
+                            <p class="mb-4">Participants included 4 MARTA UX and customer experience experts and 1 Georgia Tech HCI UX expert.</p>
+                            <div class="image-content w-full md:w-1/2 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2">
+                                <img src="../assets/images/marta/prototype_eval1.JPG" alt="prototype evaluation 1" class="rounded-lg shadow-lg w-full object-cover">
+                                <img src="../assets/images/marta/prototype_eval2.JPG" alt="prototype evaluation 2" class="rounded-lg shadow-lg w-full object-cover">
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Analysis</h4>
+                            <p class="mb-4">To analyze our findings, I organized expert notes by task and visualized problem areas by layering the notes directly onto the prototype.</p>
+                            <div class="image-content w-full md:w-2/3 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
+                                <img src="../assets/images/marta/heuristic_analysis.JPG" alt="heuristic analysis 1" class="rounded-lg shadow-lg w-full object-cover">
+                            </div>
+                            <p class="mb-4">I also visualized heuristic severity ratings in Excel to calculate evaluation statistics.</p>
+                            <div class="image-content w-full md:w-2/3 flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
+                                <img src="../assets/images/marta/heuristic_eval2.JPG" alt="heuristic analysis 2" class="rounded-lg shadow-lg w-full object-cover">
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Findings</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Group Ticketing</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>The ticketing group toggle's purpose is unclear and confusing</li>
+                                        <li>Feedback for making group members dependents is not clear</li>
+                                        <li>Ticket bundles current placement is difficult to find</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Alerts & Notifications</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Users expected to find notifications under the bell icon</li>
+                                        <li>Lack of alert personalization or filtering is frustrating</li>
+                                        <li>Navigation announcement unclear and confusing purpose</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Navigation & Layout</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Image banner is too large, hard to read, and looks like an ad</li>
+                                        <li>Scrolling functionality in trip planning is not obvious</li>
+                                        <li>The MARTA chat bot button covers important text, frustrating</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Clarity & Usability</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Users confused by unclear terms like “best route”</li>
+                                        <li>Key features (e.g., walking options) are hidden in dropdowns</li>
+                                        <li>Event table is confusing, users don't recognize clickable items</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                        <div class="text-content">
+                            <h3 class="text-3xl font-bold text-orange-400 mb-4">Usability Test</h3>
+                            <p class="mb-4">In our final test, users interacted with our prototype to complete tasks and provide feedback. Follow-up questions were then used to evaluate usability and gather additional insights.</p>
+                            <img src="../assets/images/marta/usability-testing.jpg" alt="Usability testing" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                            
+                            <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Participants</h4>
+                            <p class="mb-4">Participants were collected from MARTA and program connections. Participants ranged from 21 to 51 years old and all claimed to be "interested" or "likely" to attend the World Cup.</p>
+                            <img src="../assets/images/marta/usability_test.JPG" alt="Usability test participants" class="rounded-lg shadow-lg w-full h-auto mb-4">
+
+                            <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Analysis</h4>
+                            <p class="mb-4">During interviews, we had dedicated note takers who recorded all reactions and interactions. I built affinity maps based on the categories to best evaluate feedback.</p>
+                            <div class="image-content w-full  flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
+                                <img src="../assets/images/marta/usability_test_analysis.JPG" alt="Usability test analysis 1" class="rounded-lg shadow-lg w-full object-cover">
+                            </div>
+                            <p class="mb-4">Additionally, I collected metrics through video recordings such as # of clicks, # of errors, and time of completion between users.</p>
+                            <div class="image-content w-full  flex flex-col md:flex-row justify-center items-center mx-auto gap-5 md:gap-2 mb-4">
+                                <img src="../assets/images/marta/usability_test_analysis2.JPG" alt="Usability test analysis 2" class="rounded-lg shadow-lg w-full object-cover">
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-yellow-500 mt-4 mb-4">Findings</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Visual Design</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Unclear iconography and button design</li>
+                                        <li>Misinterpretation of design elements</li>
+                                        <li>Misaligned visual hierarchy and UX writing</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Accessibility & Usability</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Unclear app navigation leading difficulty in locating app functions</li>
+                                        <li>Lack of intuitive information structure and feature location</li>
+                                        <li>Concern for unintended interactions</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">Information Architecture</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Misplaced features</li>
+                                        <li>Navigation challenges</li>
+                                        <li>Content organization for clarity and consistency</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 rounded-3xl shadow-xl border border-gray-500">
+                                    <h2 class="text-2xl sm:text-2xl font-bold text-gray-400 mb-4">User Perception</h2>
+                                    <ul class="space-y-2 text-lg list-disc list-inside">
+                                        <li>Unclear user understanding and clarity</li>
+                                        <li>Customization and preferences needs</li>
+                                        <li>Unclear purpose of dependency for group members</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
-                <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Lessons Learned</h3>
-                <ul class="styled-list">
-                    <li>Fieldwork and research never goes as planned, you need to be able to adapt as the situation changes</li>
-                    <li>Send out emails for meetings ASAP because people can take forever to respond and schedule</li>
-                    <li>Narrow down the problem area early to avoid wasting time answering useless research questions</li>
-                    <li>When ideating and designing avoid losing sight of primary objective</li>
-                    <li>Spend time getting everyone to see the big picture and end goal</li>
-                </ul>
+                <!-- Impact and Reflection Section -->
+            <section class="content-card">
+                <div class="text-content">
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Impact and Reflection</h2>
+                    <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Next Steps</h3>
+                    <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0 items-stretch mb-8">
 
-                <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Contribution</h3>
-                <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0 items-stretch">
+                            <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Implement</h2>
+                                <ul class="space-y-2 text-lg list-disc list-inside">
+                                    <li>More intuitive diction</li>
+                                    <li>Refined iconography</li>
+                                    <li>Reorganization of information hierarchy</li>
+                                </ul>
+                            </div>
 
-                    <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Research</h2>
-                        <ul class="space-y-2 text-lg list-disc list-inside">
-                            <li>I created a detailed plan for each step of the research project</li>
-                            <li>I built interview guides and scripts as well as designed survey questions</li>
-                            <li>I recruited participants and distributed surveys</li>
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Introduce</h2>
+                                <ul class="space-y-2  text-lg list-disc list-inside">
+                                    <li>Onboarding tutorials</li>
+                                    <li>Better visual hierarchy</li>
+                                    <li>Customization tools</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Eliminate</h2>
+                                <ul class="space-y-2 text-lg list-disc list-inside">
+                                    <li>Ad-like imagery</li>
+                                    <li>MARTA jargon</li>
+                                    <li>Overcomplicated functions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Results</h3>
+                                <div class="text-content">
+                                    <p class="mb-4">In December 2024, we presented our research and design process to our professors and 3 representatives from MARTA.</p>
+                                    <p>As MARTA moves towards the unified app design and prepares for the World Cup, I hope they will utilize our research and designs to further guide development.</p>
+                                </div>
+                                
+                            </div>
+                            <div class="image-content w-full md:w-3/4 flex flex-col md:flex-row justify-center items-center mx-auto gap-5">
+            
+                                <div class="w-full aspect-w-16 aspect-h-9">
+                                    <iframe 
+                                        src="https://www.youtube-nocookie.com/embed/Jkp7WVDfzRY?si=Uia4HqgfatObj9c-" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" 
+                                        allowfullscreen
+                                    ></iframe>
+                                    </div>
+                                
+                            </div>
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Lessons Learned</h3>
+                        <ul class="styled-list">
+                            <li>Fieldwork and research never goes as planned, you need to be able to adapt as the situation changes</li>
+                            <li>Send out emails for meetings ASAP because people can take forever to respond and schedule</li>
+                            <li>Narrow down the problem area early to avoid wasting time answering useless research questions</li>
+                            <li>When ideating and designing avoid losing sight of primary objective</li>
+                            <li>Spend time getting everyone to see the big picture and end goal</li>
                         </ul>
-                    </div>
 
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Design</h2>
-                        <ul class="space-y-2  text-lg list-disc list-inside">
-                            <li>I helped make design decisions backed by our research</li>
-                            <li>I helped design wireframes and prototypes in Figma</li>
-                        </ul>
-                    </div>
+                        <h3 class="text-3xl font-bold text-orange-400 mt-8 mb-4">Contribution</h3>
+                        <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0 items-stretch">
 
-                    <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
-                        <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Evaluation</h2>
-                        <ul class="space-y-2 text-lg list-disc list-inside">
-                            <li>I wrote evaluation guides for heuristic and usability tests</li>
-                            <li>I recruited experts and users to evaluate our designs</li>
-                            <li>I created charts for participants to fill out during evaluations</li>
-                        </ul>
-                    </div>
+                            <div class="flex-1  p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Research</h2>
+                                <ul class="space-y-2 text-lg list-disc list-inside">
+                                    <li>I created a detailed plan for each step of the research project</li>
+                                    <li>I built interview guides and scripts as well as designed survey questions</li>
+                                    <li>I recruited participants and distributed surveys</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Design</h2>
+                                <ul class="space-y-2  text-lg list-disc list-inside">
+                                    <li>I helped make design decisions backed by our research</li>
+                                    <li>I helped design wireframes and prototypes in Figma</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-1 p-6 rounded-3xl shadow-xl border border-gray-500">
+                                <h2 class="text-2xl sm:text-2xl font-bold text-yellow-500 mb-4">Evaluation</h2>
+                                <ul class="space-y-2 text-lg list-disc list-inside">
+                                    <li>I wrote evaluation guides for heuristic and usability tests</li>
+                                    <li>I recruited experts and users to evaluate our designs</li>
+                                    <li>I created charts for participants to fill out during evaluations</li>
+                                </ul>
+                            </div>
+                        </div>
                 </div>
-           </div>
-        </section>
-        
-        <a href="#top" id="back-to-top" class="hidden fixed bottom-5 right-5 p-3 rounded-full bg-gray-600 text-white shadow-lg hover:bg-gray-700 transition duration-300 z-50">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
-        </a>
+                </section>
+                
+                <a href="#top" id="back-to-top" class="hidden fixed bottom-5 right-5 p-3 rounded-full bg-gray-600 text-white shadow-lg hover:bg-gray-700 transition duration-300 z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                    </svg>
+                </a>
 
+            </div>
+
+            <!-- Footer at the bottom with social links -->
+            <footer class="bg-[#131514c4] p-5 mt-auto shadow-inner text-center text-xl">
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/spencer-luke/" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
+                    <!-- LinkedIn Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/chompskigg" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
+                    <!-- GitHub Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.6.804.576 4.765-1.589 8.196-6.091 8.196-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:spencerluke011@gmail.com" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
+                    <!-- Email Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="h-5 w-5">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.585l-1.239-.755Z"/>
+                        <path d="M16 4.697v7.104l-5.803-3.558L16 4.697Z"/>
+                    </svg>
+                    <span>Email</span>
+                </a>
+            </div>
+            </footer>
     </div>
 
-    <!-- Footer at the bottom with social links -->
-    <footer class="bg-[#131514c4] p-5 mt-auto shadow-inner text-center text-xl">
-    <div class="flex justify-center space-x-6">
-        <a href="https://www.linkedin.com/in/spencer-luke/" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
-            <!-- LinkedIn Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-            <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/chompskigg" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
-            <!-- GitHub Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.6.804.576 4.765-1.589 8.196-6.091 8.196-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            <span>GitHub</span>
-        </a>
-        <a href="mailto:spencerluke011@gmail.com" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
-            <!-- Email Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="h-5 w-5">
-                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.585l-1.239-.755Z"/>
-                <path d="M16 4.697v7.104l-5.803-3.558L16 4.697Z"/>
-            </svg>
-            <span>Email</span>
-        </a>
-    </div>
-    </footer>
+
     <script>
         const carousel = document.getElementById('carousel');
         const prevBtn = document.getElementById('prev-btn');
