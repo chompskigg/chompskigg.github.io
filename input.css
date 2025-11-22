@@ -12,13 +12,30 @@
         color: #ffffff; 
         margin: 0;
         padding: 0;
-        /* background: #131514c4 url('../assets/images/background.jpg') no-repeat center center fixed; */
-        background: #050510;
+        background: #020205;
         background-size: cover;
     }    
+    canvas {
+        display: block;
+    }
 }
 
 @layer components {
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        pointer-events: none; /* Let clicks pass through to canvas if needed */
+        z-index: 10;
+        text-shadow: 0 0 20px rgba(100, 200, 255, 0.5);
+    }
+
+
+
     .lava-lamp-bg {
         position: fixed;
         inset: 0;

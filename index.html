@@ -9,12 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen">
-    <div class="lava-lamp-bg">
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="grain"></div>
-    </div>
+    <canvas id="spaceCanvas" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
     
     <div class="content">
         <nav class="bg-[#131514c4] p-4 flex justify-between items-center shadow-lg">
@@ -131,14 +126,169 @@
 
 </body>
     <script>
-        const grain = document.querySelector('.grain-bg');
-        let x = 0, y = 0;
-        function animate() {
-        x += (Math.random() - 0.5) * 2;
-        y += (Math.random() - 0.5) * 2;
-        grain.style.backgroundPosition = `${x}px ${y}px`;
-        requestAnimationFrame(animate);
+        const canvas = document.getElementById('spaceCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let width, height;
+        let stars = [];
+        let nebulas = [];
+
+        // Configuration
+        const STAR_COUNT = 200;
+        const NEBULA_COUNT = 3; // Reduced count for larger, less cluttered nebulas
+        
+        // Color palette for nebulas (Deep Purples, Blues, Teals, Magentas)
+        // Increased opacity slightly for better visibility
+        const nebulaColors = [
+            'rgba(76, 29, 149, 0.2)',   // Deep Purple
+            'rgba(29, 78, 216, 0.15)',  // Royal Blue
+            'rgba(236, 72, 153, 0.12)', // Pink/Magenta
+            'rgba(45, 212, 191, 0.12)', // Teal
+            'rgba(139, 92, 246, 0.15)'  // Violet
+        ];
+
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            init();
         }
+
+        class Star {
+            constructor() {
+                this.reset(true);
+            }
+
+            reset(initial = false) {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.z = Math.random() * 2 + 0.5; // Depth factor
+                this.size = Math.random() * 1.5;
+                
+                // Randomize blinking - Slower, more organic twinkling
+                this.blinkSpeed = Math.random() * 0.005 + 0.001;
+                this.alpha = Math.random();
+                this.blinkDir = Math.random() > 0.5 ? 1 : -1;
+
+                // Velocity based on depth (z) - SLOWED DOWN SIGNIFICANTLY
+                this.vx = (Math.random() - 0.5) * 0.05 * this.z;
+                this.vy = (Math.random() - 0.5) * 0.05 * this.z;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                // Twinkle effect
+                this.alpha += this.blinkSpeed * this.blinkDir;
+                if (this.alpha >= 1 || this.alpha <= 0.2) {
+                    this.blinkDir *= -1;
+                }
+
+                // Wrap around screen
+                if (this.x < 0) this.x = width;
+                if (this.x > width) this.x = 0;
+                if (this.y < 0) this.y = height;
+                if (this.y > height) this.y = 0;
+            }
+
+            draw() {
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size * (this.z * 0.5), 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        class Nebula {
+            constructor() {
+                this.reset(true);
+            }
+
+            reset(initial = false) {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                // Make them much larger and relative to screen size for a more spread-out look
+                this.radius = Math.max(width, height) * (Math.random() * 0.5 + 0.4);
+                this.color = nebulaColors[Math.floor(Math.random() * nebulaColors.length)];
+                
+                // Very slow drift - SLOWED DOWN SIGNIFICANTLY
+                this.vx = (Math.random() - 0.5) * 0.05; 
+                this.vy = (Math.random() - 0.5) * 0.05;
+                
+                // Pulse effect
+                this.pulseSpeed = Math.random() * 0.002 + 0.001;
+                this.pulseAngle = Math.random() * Math.PI * 2;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.pulseAngle += this.pulseSpeed;
+
+                // Gentle bounce off edges to keep color on screen
+                if (this.x < -200 || this.x > width + 200) this.vx *= -1;
+                if (this.y < -200 || this.y > height + 200) this.vy *= -1;
+            }
+
+            draw() {
+                // Create a radial gradient for a soft, gaseous look
+                // Oscillate radius slightly
+                // Increase pulse amount proportionally to size
+                const currentRadius = this.radius + Math.sin(this.pulseAngle) * (this.radius * 0.05);
+
+                const g = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, currentRadius);
+                // Start color further out and end transparency sooner for a more diffuse look
+                g.addColorStop(0.1, this.color);
+                g.addColorStop(0.7, 'rgba(0,0,0,0)');
+
+                ctx.fillStyle = g;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, currentRadius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            stars = [];
+            nebulas = [];
+            for (let i = 0; i < STAR_COUNT; i++) {
+                stars.push(new Star());
+            }
+            for (let i = 0; i < NEBULA_COUNT; i++) {
+                nebulas.push(new Nebula());
+            }
+        }
+
+        function animate() {
+            // Clear screen with a very slight transparency to create a tiny trail effect (optional)
+            // or just clear purely for crisp movement. Let's do pure clear + background fill.
+            ctx.fillStyle = '#020205';
+            ctx.fillRect(0, 0, width, height);
+
+            // Draw Nebulas first (behind stars)
+            // We use 'screen' or 'lighter' blend mode for nebulas to make colors mix nicely
+            ctx.globalCompositeOperation = 'screen';
+            nebulas.forEach(nebula => {
+                nebula.update();
+                nebula.draw();
+            });
+
+            // Draw Stars on top
+            ctx.globalCompositeOperation = 'source-over';
+            stars.forEach(star => {
+                star.update();
+                star.draw();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', resize);
+        
+        // Start
+        resize();
         animate();
     </script>
 </html>
