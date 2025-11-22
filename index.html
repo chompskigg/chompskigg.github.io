@@ -147,6 +147,16 @@
             'rgba(139, 92, 246, 0.15)'  // Violet
         ];
 
+        function startSpaceAnimation() {
+            const canvas = document.getElementById('spaceCanvas');
+            if (!canvas) {
+                console.error("Canvas element 'spaceCanvas' not found.");
+                return; 
+            }
+            resize(); 
+            animate();
+        }
+        
         function resize() {
             width = window.innerWidth;
             height = window.innerHeight;
@@ -286,10 +296,9 @@
         }
 
         window.addEventListener('resize', resize);
-        
-        // Start
-        resize();
-        animate();
+        window.addEventListener('pageshow', function (event) {
+            startSpaceAnimation();
+        });
     </script>
 </html>
 
