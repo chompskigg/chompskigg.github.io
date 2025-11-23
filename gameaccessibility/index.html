@@ -9,12 +9,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen">
-    <div class="lava-lamp-bg">
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="grain"></div>
-    </div>
+    <canvas class="background-canvas"></canvas>
 
     <div class="content">
         <!-- Navigation bar -->
@@ -35,7 +30,7 @@
         <div class="container mt-16 flex-grow">
                 <div class="flex flex-col md:flex-row justify-between items-center p-4 gap-8">
                     <h1 class="text-3xl md:text-[48px] font-bold font-serif">
-                        <span class="font-merriweather">AI-Powered Accessibility in Gaming <span class="text-gray-400">for Georgia Tech</span></span>
+                        <span class="font-merriweather text-shadow-lg">AI-Powered Accessibility in Gaming <span class="text-gray-400">for Georgia Tech</span></span>
                     </h1>
                 </div>
             
@@ -76,11 +71,73 @@
                     </div>
                 </div>
             </section>
-            
 
+            <!-- Background -->
+            <section class="w-full content-card flex flex-col md:flex-row gap-8 p-6 rounded-lg shadow-md">
+                <div class="text-content w-full md:w-1/2 items-start">
+                    <h2 class="text-4xl font-bold mb-4">Background</h2>
+                    <p class="big-inter-text">Although accessibility in gaming has drastically improved in recent years, accessibility options are still not available in every game. Accessibility advancements can disappear as easily as they appear, and the turbulent gaming industry has exacerbated the issue.</p>
+                    <div class="image-content">
+                        <img src="../assets/images/accessibility_gamer/accessibiity_stats.png" alt="accessibility stats" class="rounded-lg mt-5">
+                    </div>
+                    <p class="big-inter-text">The demand for accessible games will only increase and the industry has the opportunity to accommodate a large, untapped market: Visually impaired gamers. Of the 216 million Americans who play games regularly, 8% have some form of visual impairment. How can we design accessible options for those users?</p>
+                </div>
+                <div class="image-content flex justify-center w-full md:w-1/2 items-center">
+                    <img src="../assets/images/accessibility_gamer/sven.jpg" alt="Blind professional gamer, Sven, playing street fighter" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+            </section>
 
-            <!-- Footer at the bottom with social links -->
-            <footer class="bg-[#131514c4] p-5 mt-auto shadow-inner text-center text-xl">
+            <!-- Problem & Research Questions -->
+            <div class="flex flex-col md:flex-row gap-8 big-inter-text">
+                <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <h2 class="text-4xl font-bold mb-4">Defining the Problem</h2>
+                        <p class="mt-5">Currently, visually impaired gamers are limted by hard-coded accessibility accommondations that game developers have to spend additional resources to develop. This leads to many games lacking accessibility options and leaving visually impaired users to rely on their friends or family for assistance.</p>
+                        <br>
+                        <p>Now with the introduction of new advances in artificial Intelligence, we might be able to develop tools to make gaming more inclusive.</p>
+                        <div class="image-content">
+                            <img src="../assets/images/accessibility_gamer/whyresearch.png" alt="why conduct research?" class="rounded-lg mt-5">
+                        </div>
+                        <br>
+                        <p class="big-inter-text font-bold">How might we leverage AI to overcome the shortcomings of current accessibility features for visually impaired gamers?</p>
+                    </div>
+                </section>
+
+                <section class="w-full md:w-1/2 content-card flex flex-col items-start gap-8 p-6 rounded-lg shadow-md">
+                    <div class="text-content">
+                        <h2 class="text-4xl font-bold mb-4">Research Questions</h2>
+                        <div class="grid grid-cols-[5%_45%_50%] gap-2 p-4 big-inter-text">
+                            <div class="font-bold p-2 text-center"></div>
+                            <div class="font-bold p-1">Research Question</div>
+                            <div class="font-bold p-1">Rationale</div>
+                            
+                            <div class="p-1 text-center">1.</div>
+                            <div class="p-1">How do visually impaired gamers interact with games and how does it differ from seeing gamers?</div>
+                            <div class="p-1">Define the core behaviors and sensory differences needed to build inclusive designs.</div>
+
+                            <div class="p-1 text-center">2.</div>
+                            <div class="p-1">What are the failings of existing, hard-coded accommodations for visually impaired gamers?</div>
+                            <div class="p-1">Identify the limitations of current static solutions and justify the need for better ones.</div>
+                            
+                            <div class="p-1 text-center">3.</div>
+                            <div class="p-1">What barriers and pain-points do visually impaired gamers experience?</div>
+                            <div class="p-1">To uncover functional, emotional, and social obstacles that prevent full participation and enjoyment.</div>
+
+                            <div class="p-1 text-center">4.</div>
+                            <div class="p-1">What are gamers with and without disabilities' attitudes toward AI?</div>
+                            <div class="p-1">To assess user acceptance and potential concerns with AI accessibility solutions.</div>
+
+                            <div class="p-1 text-center">5.</div>
+                            <div class="p-1">Where can AI affordances provide the greatest accessibility improvements?</div>
+                            <div class="p-1">Pinpoint what design directions are most favorable to stakeholders.</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer at the bottom with social links -->
+        <footer class="bg-[#131514c4] p-5 mt-auto shadow-inner text-center text-xl">
             <div class="flex justify-center space-x-6">
                 <a href="https://www.linkedin.com/in/spencer-luke/" class="text-white hover:text-gray-400 flex items-center space-x-1.5">
                     <!-- LinkedIn Icon -->
@@ -105,114 +162,230 @@
                     <span>Email</span>
                 </a>
             </div>
-            </footer>
+        </footer>
     </div>
 
     <script>
-        const TARGET_URL = "https://www.google.com/search?q=hello+world";
-        const EXPECTED_HASH = "9ef05bff7f3aa37a1f7e6d965e03337e2cc1a143670ea011356f6778531db1d9";
-        
-        // --- DOM Elements ---
-        const passwordInput = document.getElementById('password');
-        const form = document.getElementById('password-form');
-        const messageArea = document.getElementById('message-area');
-        const protectedContent = document.getElementById('protected-content');
-        const secretLink = document.getElementById('secret-link');
-        const submitButton = document.getElementById('submit-button');
-
-        // Set the target URL to the link element
-        secretLink.href = TARGET_URL;
-
-        /**
-         * Converts a string into a SHA-256 hexadecimal hash using the Web Crypto API.
-         * @param {string} str The string to hash (the user's password input).
-         * @returns {Promise<string>} The hexadecimal hash string.
-         */
-        async function sha256(str) {
-            const buffer = new TextEncoder().encode(str);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', buffer);
-            
-            // Convert buffer to hex string
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-            return hashHex;
+        window.addEventListener('load', () => {
+        const canvas = document.querySelector('.background-canvas');
+        const gl = canvas.getContext("webgl");
+        if (!gl) {
+            console.error("WebGL not supported");
+            return;
         }
 
-        /**
-         * Displays a temporary message in the message area.
-         * @param {string} message The message text.
-         * @param {string} type 'success' or 'error'.
-         */
-        function showMessage(message, type) {
-            messageArea.textContent = message;
-            messageArea.classList.remove('hidden', 'bg-red-900/30', 'bg-green-900/30', 'text-red-300', 'text-green-300');
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
 
-            if (type === 'error') {
-                messageArea.classList.add('bg-red-900/30', 'text-red-300');
-            } else if (type === 'success') {
-                messageArea.classList.add('bg-green-900/30', 'text-green-300');
+        function resizeCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            gl.viewport(0, 0, width, height);
+        }
+        window.addEventListener("resize", resizeCanvas);
+
+        let mouse = { x: width / 2, y: height / 2 };
+        function onMouseMove(e) {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        }
+        window.addEventListener("mousemove", onMouseMove);
+
+        const circleColors = [
+            [18 / 255, 113 / 255, 1.0],
+            [221 / 255, 74 / 255, 1.0],
+            [100 / 255, 220 / 255, 1.0],
+            [200 / 255, 50 / 255, 50 / 255],
+            [80 / 255, 200 / 255, 120 / 255],
+            [140 / 255, 100 / 255, 1.0],
+        ];
+
+        let circles = [];
+        function initCircles() {
+            circles = [];
+            const baseRadius = (width + height) * 0.2;
+            for (let i = 0; i < 5; i++) {
+            const radius = baseRadius;
+            const x = Math.random() * width;
+            const y = Math.random() * height;
+            const speedMultiplier = Math.random() * 2 + 0.5;
+            const vx = (Math.random() - 0.5) * speedMultiplier * 0.5;
+            const vy = (Math.random() - 0.5) * speedMultiplier * 0.5;
+            circles.push({
+                x,
+                y,
+                radius,
+                color: circleColors[i],
+                vx,
+                vy,
+                interactive: false,
+            });
             }
 
-            // Hide the message after 5 seconds
-            setTimeout(() => {
-                messageArea.classList.add('hidden');
-                messageArea.textContent = '';
-            }, 5000);
+            // interactive circle
+            const interactiveRadius = (width + height) * 0.1;
+            circles.push({
+            x: width / 2,
+            y: height / 2,
+            radius: interactiveRadius,
+            color: circleColors[5],
+            vx: 0,
+            vy: 0,
+            interactive: true,
+            });
         }
 
-        // --- Event Listener ---
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Stop the form from submitting normally
+        initCircles();
 
-            const password = passwordInput.value.trim();
-            if (!password) {
-                showMessage("Please enter a password.", 'error');
-                return;
+        const vertexSrc = `
+            attribute vec2 a_position;
+            varying vec2 v_uv;
+            void main(void) {
+            v_uv = a_position * 0.5 + 0.5; 
+            v_uv.y = 1.0 - v_uv.y; 
+            gl_Position = vec4(a_position, 0.0, 1.0);
             }
+        `;
 
-            // Disable the button and clear previous messages
-            submitButton.disabled = true;
-            submitButton.textContent = "Checking...";
-            messageArea.classList.add('hidden');
+        const fragmentSrc = `
+        precision mediump float;
+        varying vec2 v_uv;
+
+        uniform vec2 u_resolution;
+        uniform bool u_darkMode;
+        uniform int u_circleCount;
+        uniform vec3 u_circlesColor[6];
+        uniform vec3 u_circlesPosRad[6];
+        uniform vec2 u_mouse;
+
+        void main(void) {
+            vec2 st = v_uv * u_resolution;
+
+            vec3 topColor = vec3(108.0/255.0, 0.0, 162.0/255.0);
+            vec3 bottomColor = vec3(0.0, 17.0/255.0, 82.0/255.0);
+            vec3 bgColor = mix(topColor, bottomColor, st.y / u_resolution.y);
+
+            float fieldSum = 0.0;
+            vec3 weightedColorSum = vec3(0.0);
             
-            try {
-                // 1. Hash the user's input
-                const inputHash = await sha256(password);
-                
-                // *** DEBUG LOGGING ***
-                // Check your browser's console (F12) to see what hash was generated from your input!
-                console.log(`--- Password Check ---`);
-                console.log(`Input String (after trim): "${password}"`);
-                console.log(`Generated Hash: ${inputHash}`);
-                console.log(`Expected Hash: ${EXPECTED_HASH}`);
-                // *********************
-
-                // 2. Compare the generated hash with the stored hash
-                if (inputHash === EXPECTED_HASH) {
-                    // Success!
-                    protectedContent.style.display = 'block';
-                    form.style.display = 'none'; // Hide the form
-                    showMessage("Password Accepted!", 'success');
-                } else {
-                    // Failure
-                    protectedContent.style.display = 'none';
-                    showMessage("Incorrect password. Please try again.", 'error');
-                }
-            } catch (error) {
-                console.error("Cryptography error:", error);
-                showMessage("An error occurred during verification.", 'error');
-            } finally {
-                // Re-enable the button
-                submitButton.disabled = false;
-                submitButton.textContent = "Unlock";
-                passwordInput.value = ''; // Clear the input field
+            for (int i = 0; i < 6; i++) {
+                if (i >= u_circleCount) { break; }
+                vec3 posRad = u_circlesPosRad[i];
+                vec2 cPos = vec2(posRad.r, posRad.g);
+                float radius = posRad.b;
+                float dist = length(st - cPos);
+                float sigma = radius * 0.5;
+                float val = exp(- (dist * dist) / (2.0 * sigma * sigma));
+                fieldSum += val;
+                weightedColorSum += u_circlesColor[i] * val;
             }
+
+            vec3 finalCirclesColor = vec3(0.0);
+            if (fieldSum > 0.0) {
+            finalCirclesColor = weightedColorSum / fieldSum;
+            }
+
+            float intensity = pow(fieldSum, 1.4);
+            vec3 finalColor = mix(bgColor, finalCirclesColor, clamp(intensity, 0.0, 1.0));
+            gl_FragColor = vec4(finalColor, 1.0);
+        }
+        `;
+
+        function createShader(type, source) {
+            const shader = gl.createShader(type);
+            gl.shaderSource(shader, source);
+            gl.compileShader(shader);
+            if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+            console.error("Shader compile error:", gl.getShaderInfoLog(shader));
+            gl.deleteShader(shader);
+            return null;
+            }
+            return shader;
+        }
+
+        const vertShader = createShader(gl.VERTEX_SHADER, vertexSrc);
+        const fragShader = createShader(gl.FRAGMENT_SHADER, fragmentSrc);
+
+        const program = gl.createProgram();
+        gl.attachShader(program, vertShader);
+        gl.attachShader(program, fragShader);
+        gl.linkProgram(program);
+        if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+            console.error("Program link error:", gl.getProgramInfoLog(program));
+        }
+
+        gl.useProgram(program);
+
+        const quadBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, quadBuffer);
+        const vertices = new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]);
+        gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
+
+        const a_position = gl.getAttribLocation(program, "a_position");
+        gl.enableVertexAttribArray(a_position);
+        gl.vertexAttribPointer(a_position, 2, gl.FLOAT, false, 0, 0);
+
+        const u_resolution = gl.getUniformLocation(program, "u_resolution");
+        const u_darkMode = gl.getUniformLocation(program, "u_darkMode");
+        const u_circleCount = gl.getUniformLocation(program, "u_circleCount");
+        const u_circlesColor = gl.getUniformLocation(program, "u_circlesColor");
+        const u_circlesPosRad = gl.getUniformLocation(program, "u_circlesPosRad");
+        const u_mouse = gl.getUniformLocation(program, "u_mouse");
+
+        gl.uniform2f(u_resolution, width, height);
+
+        function updateCircles() {
+            for (let i = 0; i < circles.length; i++) {
+            const c = circles[i];
+            if (!c.interactive) {
+                c.x += c.vx;
+                c.y += c.vy;
+                if (c.x - c.radius > width) c.x = -c.radius;
+                if (c.x + c.radius < 0) c.x = width + c.radius;
+                if (c.y - c.radius > height) c.y = -c.radius;
+                if (c.y + c.radius < 0) c.y = height + c.radius;
+            } else {
+                c.x += (mouse.x - c.x) * 0.1;
+                c.y += (mouse.y - c.y) * 0.1;
+            }
+            }
+        }
+
+        function render() {
+            updateCircles();
+
+            gl.viewport(0, 0, width, height);
+            gl.clearColor(0, 0, 0, 1);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+
+            gl.useProgram(program);
+
+            gl.uniform1i(u_circleCount, circles.length);
+            gl.uniform2f(u_resolution, width, height);
+            gl.uniform2f(u_mouse, mouse.x, mouse.y);
+
+            let colorsArr = [];
+            let posRadArr = [];
+            for (let i = 0; i < 6; i++) {
+            if (i < circles.length) {
+                const c = circles[i];
+                colorsArr.push(c.color[0], c.color[1], c.color[2]);
+                posRadArr.push(c.x, c.y, c.radius);
+            } else {
+                colorsArr.push(0, 0, 0);
+                posRadArr.push(0, 0, 0);
+            }
+            }
+
+            gl.uniform3fv(u_circlesColor, new Float32Array(colorsArr));
+            gl.uniform3fv(u_circlesPosRad, new Float32Array(posRadArr));
+
+            gl.drawArrays(gl.TRIANGLES, 0, 6);
+            requestAnimationFrame(render);
+        }
+
+        render();
         });
-
-        // Initial setup for the form focus
-        window.onload = () => {
-            passwordInput.focus();
-        };
     </script>
 </body>
 </html>
